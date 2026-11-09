@@ -142,6 +142,7 @@ Lập thông báo và gửi khách thuê
           Tạo thông báo tự động
                     ↓
               Gửi khách thuê
+```
 
 ### Problem Card #3 - – Quản lý yêu cầu sửa chữa của khách thuê
 
