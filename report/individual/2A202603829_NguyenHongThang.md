@@ -204,8 +204,8 @@ Quy trình mong muốn
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
-| | | |
-
+|Phụ thuộc vào khả năng truy cập dữ liệu LMS; mỗi trường có thể sử dụng một hệ thống khác nhau. |Đồng ý |Không giả định có thể kết nối trực tiếp với mọi LMS. Cần khảo sát LMS thực tế và kiểm tra khả năng cung cấp API. |
+|Dữ liệu bài tập đến từ nhiều nguồn, có thể trùng lặp hoặc thiếu hạn nộp.|Đồng ý|Bổ sung bước AI chuẩn hóa, phát hiện trùng lặp và yêu cầu phụ huynh xác nhận thông tin chưa rõ.|
 ---
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
