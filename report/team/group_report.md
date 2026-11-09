@@ -148,36 +148,56 @@ Tổng hợp:
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
 
 ```text
+HIỆN TẠI — 6 bước, 61 phút, 6/6 bước thủ công
 
+[1 Phát hiện lỗi: 3']
+→ [2 Đọc và xác định lỗi: 5']
+→ [3 Tìm kiếm nguyên nhân: 10']
+→ [4 Đối chiếu phiên bản: 13']
+→ [5 Thử phương án khắc phục: 15'] ← BOTTLENECK
+→ [6 Kiểm tra lại chương trình: 15'] ← BOTTLENECK
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-
-**Bottleneck chính:**
+| 1 | Lập trình viên|Lệnh cài đặt thư viện, môi trường lập trình | Thông báo lỗi| 3 phút|Có thể xảy ra do thiếu dependency, sai phiên bản hoặc xung đột môi trường |
+| 2 |Lập trình viên | Error message, traceback |Nhận diện dấu hiệu và thành phần gây lỗi |5 phút |Phải tự xác định phần thông tin quan trọng trong log |
+| 3 |Lập trình viên |Python, pip, OS, virtual environment, dependency |Thông tin cấu hình môi trường |10 phút |Kiểm tra phiên bản và tìm kiếm nguyên nhân qua Google, Stack Overflow, tài liệu chính thức |     
+| 4 | Lập trình viên|Thông tin lỗi, cấu hình môi trường, kết quả tra cứu |Xác định nguyên nhân và phương án khắc phục phù hợp |13 phút |Đối chiếu phiên bản Python, thư viện và các dependency để tránh xung đột |
+| 5 | Lập trình viên|Phương án khắc phục đã lựa chọn |Thay đổi môi trường hoặc phiên bản thư viện |15 phút |Phải thử cài đặt lại, đổi phiên bản hoặc điều chỉnh môi trường; có thể phát sinh lỗi mới |
+| 6 | Lập trình viên|Môi trường sau khi điều chỉnh, chương trình cần chạy |Kết quả xác nhận cài đặt thành công hoặc lỗi còn tồn tại |15 phút |Chạy lại chương trình và kiểm tra; nếu chưa thành công phải quay lại bước tìm nguyên nhân |
+**Bottleneck chính:** Bước 5 và bước 6 là bottleneck chính, chiếm tổng cộng 30 phút (49,2% tổng thời gian 61 phút). Lập trình viên phải tự thử các phương án khắc phục, điều chỉnh môi trường và chạy lại chương trình để xác nhận kết quả. Nếu phương án không phù hợp hoặc phát sinh lỗi mới, quy trình phải lặp lại, khiến thời gian xử lý kéo dài.
 
 ### 4.2. Quy trình tương lai
 
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
 ```text
+TƯƠNG LAI — 5 bước, khoảng 35 phút, 2/5 bước thủ công
 
+[1 Thu thập log lỗi và môi trường: 3']       ← RULE / SCRIPT
+→ [2 Kiểm tra lỗi phổ biến: 2']              ← RULE
+→ [3 Phân tích lỗi và đề xuất cách sửa: 5']  ← AI
+→ [4 Lập trình viên kiểm tra và thực hiện: 20'] ← CON NGƯỜI
+→ [5 Chạy lại và xác nhận kết quả: 5']       ← CON NGƯỜI
+
+BOUNDARY:
+AI chỉ phân tích log lỗi, thông tin môi trường và đề xuất phương án. AI không tự chạy lệnh, cài/gỡ thư viện, thay đổi phiên bản Python,
+chỉnh sửa môi trường ảo hoặc file cấu hình khi chưa được lập trình viên phê duyệt.
+PHƯƠNG ÁN QUAY VỀ:
+Nếu AI đề xuất sai, độ tin cậy thấp hoặc lỗi không được khắc phục, lập trình viên bỏ đề xuất và chuyển sang quy trình tra cứu thủ công
+qua tài liệu chính thức, Stack Overflow hoặc GitHub.
 ```
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước |6 | 5| |
+| Tổng thời gian |61 phút |Khoảng 35 phút | |
+| Số bước thủ công | 6/6 |2/5 |Lập trình viên vẫn kiểm tra và thực hiện |
+| Bottleneck chính |Thử phương án + kiểm tra lại (30 phút) |Lập trình viên kiểm tra và thực hiện (20 phút) | Giữ con người kiểm soát việc thay đổi môi trường|
+| Rủi ro mới phát sinh | |AI đề xuất sai, không phù hợp phiên bản hoặc gây lỗi mới |Xử lý bằng Rule, Boundary và phương án quay về |
 
 ---
 
