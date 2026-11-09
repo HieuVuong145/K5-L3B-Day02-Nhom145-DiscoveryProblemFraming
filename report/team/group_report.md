@@ -311,13 +311,11 @@ Biện pháp kiểm soát:
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-|Bottleneck |Bước thử và kiểm tra lại mất 30 phút |
-Làm rõ vấn đề thử sai, thiếu thông tin chẩn đoán; 30 phút là số liệu minh họa |Tránh coi thời gian minh họa là bằng chứng thực nghiệm |
+|Bottleneck |Bước thử và kiểm tra lại mất 30 phút |Làm rõ vấn đề thử sai, thiếu thông tin chẩn đoán, 30 phút là số liệu minh họa |Tránh coi thời gian minh họa là bằng chứng thực nghiệm |
 |Success Metric |61 → ≤ 40 phút/lỗi; 30 → ≤ 15 phút tại bottleneck |Giữ mục tiêu nhưng bổ sung so sánh trên cùng tập lỗi và kiểm tra lỗi phát sinh mới |Đánh giá cả hiệu quả và độ an toàn |
 |AI intervention point |Chưa xác định rõ |Sau bước Rule, trước bước lập trình viên quyết định sửa |Xác định chính xác vai trò của AI |
 |Mức chọn |Chưa quyết định |Workflow kết hợp AI |Các bước xử lý có thể định nghĩa trước, chưa cần Agent tự quyết |
-|Rủi ro & người kiểm tra |Chưa có trường riêng |
-Lập trình viên kiểm tra kết quả AI và xác nhận sau khi sửa |Đảm bảo Human-in-the-Loop |
+|Rủi ro & người kiểm tra |Chưa có trường riêng |Lập trình viên kiểm tra kết quả AI và xác nhận sau khi sửa |Đảm bảo Human-in-the-Loop |
 
 **Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
 
