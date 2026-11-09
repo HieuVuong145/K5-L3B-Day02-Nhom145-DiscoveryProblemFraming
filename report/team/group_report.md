@@ -233,23 +233,37 @@ Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng
 ## 6. Mức can thiệp AI (CP6)
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
+| Độ phức tạp \ Độ mơ hồ | Thấp | Cao |
+|---|---|---|
+| **Cao** | Workflow theo quy trình xác định | **Workflow + AI / Agent (Bài toán #9)** |
+| **Thấp** | No AI / Rule | AI hỗ trợ phân tích |
 
-Bài của nhóm nằm ở ô:
+**Bài của nhóm nằm ở ô:** Độ mơ hồ cao - Độ phức tạp cao (đối với lỗi dependency và môi trường phức tạp).
 
-Vì sao:
+**Vì sao:**
+
+- **Độ mơ hồ cao:** Một thông báo lỗi cài đặt thư viện có thể xuất phát từ nhiều nguyên nhân như xung đột dependency, phiên bản Python không tương thích hoặc thiếu công cụ build. Không phải lúc nào cũng có thể xác định chính xác nguyên nhân chỉ dựa vào thông báo lỗi ban đầu.
+
+- **Độ phức tạp cao:** Quá trình khắc phục có thể cần đối chiếu phiên bản Python, hệ điều hành, các package và quan hệ dependency. Việc thay đổi một thư viện có thể ảnh hưởng đến các thư viện khác, khiến quy trình phải lặp lại nhiều lần.
+
+**Mức can thiệp đề xuất:** Workflow kết hợp AI.
+
+Mặc dù bài toán có cả độ mơ hồ và độ phức tạp cao trong một số tình huống, chưa cần triển khai Agent tự chủ. Quy trình chẩn đoán có thể được xác định trước, AI chỉ hỗ trợ phân tích nguyên nhân và đề xuất phương án. Lập trình viên vẫn là người phê duyệt, thực hiện và kiểm tra kết quả.
+
+Đối với các lỗi đơn giản, hệ thống ưu tiên Rule hoặc checklist thay vì sử dụng AI.
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **No AI** |Checklist, hướng dẫn xử lý lỗi, tài liệu lỗi thường gặp|Người dùng gặp lỗi đơn giản, nguyên nhân rõ ràng |Vẫn phải tra cứu, đối chiếu và thử nghiệm thủ công |Không ưu tiên |
+| **Rule** |Script kiểm tra Python, pip, virtualenv, dependency và nhận diện lỗi theo mẫu |Lỗi có dấu hiệu xác định, có thể viết quy tắc xử lý |Không bao quát hết các lỗi phụ thuộc ngữ cảnh |Dùng hỗ trợ |
+| **Workflow** |Script thu thập môi trường → Rule kiểm tra → AI phân tích log → người dùng phê duyệt → kiểm tra kết quả |Quy trình các bước xác định trước nhưng cần AI diễn giải lỗi đa dạng |AI chẩn đoán sai hoặc đề xuất thay đổi không phù hợp |Đề xuất chọn |
+| **Agent** |AI tự chọn công cụ, chạy lệnh kiểm tra và lặp lại các bước sửa lỗi |Khi thực sự cần tự điều chỉnh kế hoạch xử lý theo kết quả mới và có môi trường thử nghiệm an toàn |Có thể sửa sai dependency, thay đổi hoặc làm hỏng môi trường |Chưa chọn |
 
-**Mức chọn:**
+**Mức chọn:** Workflow có tích hợp AI tại bước phân tích và đề xuất phương án khắc phục.
 
-**Vì sao không chọn mức đơn giản hơn:**
+**Vì sao không chọn mức đơn giản hơn:** Checklist và Rule hữu ích đối với lỗi phổ biến, nhưng có thể chưa đủ khi thông báo lỗi phụ thuộc vào nhiều phiên bản thư viện, hệ điều hành và quan hệ dependency. Workflow cho phép kết hợp kiểm tra có cấu trúc với AI để diễn giải ngữ cảnh, đồng thời giữ việc thay đổi môi trường dưới quyền kiểm soát của lập trình viên.
 
 ### 6.3. AI Canvas rút gọn
 
