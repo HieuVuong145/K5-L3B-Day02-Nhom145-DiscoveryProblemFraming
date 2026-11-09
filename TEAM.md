@@ -4,15 +4,15 @@
 
 ## Thông tin nhóm
 
-- Tên nhóm:
-- Candidate problem nhóm chọn (1 câu):
-- Quyết định cuối (Go / Not Yet / No-Go):
+- Tên nhóm: Nhóm 145
+- Candidate problem nhóm chọn (1 câu): Gặp lỗi trong quá trình cài đặt thư viện lập trình, muốn kiểm tra nguyên nhân và cách khắc phục theo một quy trình thống nhất, để không phải xử lý lại từ đầu.
+- Quyết định cuối (Go / Not Yet / No-Go): Not Yet
 
 ## Thành viên
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | | | | |
+| 1 | Vương Toàn Minh Hiếu | 2A202603853 | Research/Kiểm chứng | HieuVuong145 |
 | 2 | | | | |
 | 3 | | | | |
 | 4 | | | | |
@@ -26,18 +26,72 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 | Checkpoint | Người chính | Người hỗ trợ | Sản phẩm |
 |---|---|---|---|
 | CP3 — Hội tụ nhóm | | | Cluster, cây OST, bảng chấm điểm |
-| CP4 — Kiểm chứng | | | Assumption map, snapshot hoặc survey |
-| CP4 — Research | | | Bảng research có link |
+| CP4 — Kiểm chứng | Hiếu | | Assumption map, snapshot hoặc survey |
+| CP4 — Research | Hiếu | | Bảng research có link |
 | CP5 — Quy trình trước/sau | | | Quy trình + bảng before/after |
 | CP5 — Problem Statement v0 | | | Problem Statement v0 |
 | CP6 — Mức can thiệp + Problem Statement v1 | | | Ma trận, AI Canvas, eval, Problem Statement v1 |
-| CP6 — Quyết định | | | 4 rủi ro + Go/Not Yet/No-Go |
+| CP6 — Quyết định | Hiếu | | 4 rủi ro + Go/Not Yet/No-Go |
 
 ## Cá nhân
 
 Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `HoVaTen-MSSV`.
 
-### HoVaTen-MSSV
+### 1. VuongToanMinhHieu-2A202603853
+
+**Phần việc phụ trách:**
+
+- 1 phần thực hiện brainstorm các Candidate problem, nghiên cứu và kiểm thử, đưa ra quyết định.
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Suy nghĩ, brainstorm và đưa ra các loại giả định kèm theo testcase kiểm thử vấn đề. Đối với vấn đề này sẽ đi nghiên cứu các thuật toán, giải pháp có sẵn có thể là giải pháp của vấn đề cài đặt thư viện lỗi.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- Phần 3(CP4) và phần 8(CP6)
+
+**Điều mình học được từ phần nhóm:**
+
+- Cách lựa chọn các giả định và kiểm thử phù hợp và cần thiết cho bài toán, vấn đề đang được đặt ra. Từ đó nghiên cứu và lựa chọn cái giải pháp đề xuất (có thể có sẵn) hợp lý trong bối cảnh vấn đề.
+
+### 2. HoVaTen-MSSV
+
+**Phần việc phụ trách:**
+
+-
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+-
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+-
+
+**Điều mình học được từ phần nhóm:**
+
+-
+
+### 3. HoVaTen-MSSV
+
+**Phần việc phụ trách:**
+
+-
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+-
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+-
+
+**Điều mình học được từ phần nhóm:**
+
+-
+
+### 4. HoVaTen-MSSV
 
 **Phần việc phụ trách:**
 
