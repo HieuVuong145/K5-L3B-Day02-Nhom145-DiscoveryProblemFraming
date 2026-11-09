@@ -51,7 +51,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | Actor | Người tham gia giao thông |
 | Thời điểm / bối cảnh | Giờ cao điểm |
 | Quy trình hiện tại (3–7 bước) | Mở map -> Chọn lộ trình hay đi -> Gặp đoạn đường tắc -> Mở map tìm đường đi khác -> Chọn đường vòng và di chuyển -> Đi muộn |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 3,4 vì đi vào đường tắc đã mất thời gian và mất thêm thời gian tự tìm đường |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Đi vào đường tắc đã mất thời gian và mất thêm thời gian tự tìm đường |
 | Impact (nếu không giải thì sao) | Mất thêm 20-30p di chuyển |
 | Success metric (baseline → target) | Giảm thời gian tham gia giao thông |
 | Phương án không dùng AI | Xuất phát sớm hơn khung giờ bình thường hay đi khoảng 30p |
@@ -75,7 +75,7 @@ HIỆN TẠI — 45 phút (Chậm hơn bình thường 25–30 phút)
 | Actor | Sinh viên CNTT, dev |
 | Thời điểm / bối cảnh | Cuối ngày làm việc |
 | Quy trình hiện tại (3–7 bước) | Rà soát lịch sử commit -> Lục lại tab trình duyệt, tài liệu đọc trong ngày -> Tin nhắn trao đổi -> Gom các ý rời rạc -> Viết tóm tắt báo cáo thành từng mục|
-| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 2 và 5 |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Lục lại lịch sử mất thời gian và phải viết các nội dung thành các mục chi tiết và hợp lý |
 | Impact (nếu không giải thì sao) | Mỗi ngày mất khoảng 30p-1h cho công việc ngắn |
 | Success metric (baseline → target) | Tiết kiệm thời gian viết Daily Standup, đầy đủ tính chất công việc học tập được báo cáo |
 | Phương án không dùng AI | Tạo sẵn template, mỗi khi xong công việc là ghi chú luôn |
@@ -99,7 +99,7 @@ HIỆN TẠI — 25 phút
 | Actor | Người bệnh đi khám |
 | Thời điểm / bối cảnh | Buổi sáng/chiều các ngày trong tuần khi lượng bệnh nhân đông nhất |
 | Quy trình hiện tại (3–7 bước) | 1. Xếp hàng lấy số và làm thủ tục tại quầy tiếp đón · 2. Chờ khám lâm sàng tổng quát ban đầu để nhận phiếu chỉ định · 3. Đóng tiền viện phí · 4. Tự tìm đường đi và xếp hàng lần lượt tại 3–4 phòng cận lâm sàng (lấy máu, siêu âm, X-quang, điện tim) · 5. Ngồi chờ lấy kết quả xét nghiệm · 6. Quay lại phòng khám ban đầu chờ bác sĩ đọc kết quả và kê đơn |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 4, thời gian di chuyển và xếp hàng rất lâu |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Thời gian di chuyển qua các phòng, toà nhà và thời gian xếp hàng rất lâu |
 | Impact (nếu không giải thì sao) | Mất thời gian chờ nhiều tiếng cho 1 buổi khám |
 | Success metric (baseline → target) | Rút ngắn quy trình khám |
 | Phương án không dùng AI | Đặt lịch khám trước, hoặc đặt lịch hẹn giờ qua ứng dụng bệnh viện và chuẩn bị bản đồ bệnh viện |
