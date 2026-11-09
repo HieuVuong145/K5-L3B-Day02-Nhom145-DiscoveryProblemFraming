@@ -6,11 +6,11 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
+- Họ tên: Nguyễn Hồng Thắng
+- MSSV: 2A202603829
 - Email trường (không bắt buộc, repo có thể để public):
-- Tên nhóm:
-- Link repo nhóm:
+- Tên nhóm: Nhóm 145
+- Link repo nhóm: https://github.com/HieuVuong145/K5-L3B-Day02-Nhom145-DiscoveryProblemFraming.git
 
 ---
 
