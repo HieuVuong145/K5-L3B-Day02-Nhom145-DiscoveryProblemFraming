@@ -8,7 +8,7 @@
 - Tên nhóm: Nhóm 145
 - Thành viên: xem `TEAM.md`
 - Candidate problem được chọn (1 câu): Khi gặp lỗi trong quá trình cài đặt thư viện lập trình, tôi muốn kiểm tra nguyên nhân và cách khắc phục theo một quy trình thống nhất, để không phải xử lý lại từ đầu.
-- Quyết định cuối: Go / Not Yet / No-Go
+- Quyết định cuối: Not Yet
 
 ---
 
@@ -334,24 +334,32 @@ Biện pháp kiểm soát:
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | **Trung bình** | Theo tổng hợp CP4, người dùng được hỏi từng mất 45–90 phút xử lý lỗi thư viện/môi trường, cho thấy pain có thật. Tuy nhiên, mẫu khảo sát/phỏng vấn còn nhỏ và chưa kiểm tra người dùng có tiếp tục dùng công cụ sau khi thử hay không. |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | **Cao** | Chưa có thử nghiệm với prototype hoặc kiểm tra xem người dùng mới có hiểu nguyên nhân, đánh giá được lệnh đề xuất và nhận ra lệnh nguy hiểm hay không. Log dài và khác biệt theo OS/Python có thể làm đầu ra khó hiểu hoặc sai ngữ cảnh. Có thể kiểm chứng bằng thử nghiệm có người giám sát, không cho AI tự chạy lệnh. |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | **Cao** | Research cho thấy đã có công cụ quản lý dependency và trợ lý gợi ý lệnh, nhưng nhóm chưa chứng minh có thể lấy đủ ngữ cảnh môi trường để chẩn đoán chính xác, kiểm chứng lệnh sửa, tạo snapshot và rollback tin cậy trên các hệ điều hành. Quy trình tương lai và thời gian 14 phút mới là ước tính, chưa đo bằng prototype. |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | **Trung bình** | Chi phí API dưới 10.000 VNĐ/tháng trong assumption map là giả định, chưa có số đo. Log terminal có thể chứa đường dẫn, tên nội bộ hoặc bí mật; cần xác định cách lọc dữ liệu và ai duy trì công cụ trước khi triển khai rộng. |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:** **Not Yet**
 
-**Lý do:**
+**Lý do:** Bằng chứng CP4 cho thấy vấn đề xảy ra với người dùng thật và có thời gian xử lý đáng kể, nên chưa có cơ sở để bác bỏ cơ hội. Tuy nhiên, Usability và Feasibility hiện ở mức rủi ro cao: nhóm chưa thử nghiệm đầu ra với người dùng, chưa xác minh độ an toàn/chính xác của lệnh đề xuất, cũng chưa chứng minh được cơ chế snapshot và rollback. Vì vậy chưa nên Go cho việc triển khai; cần kiểm chứng nhanh bằng pilot giới hạn, có người giám sát và không tự động thực thi lệnh.
 
 **Nếu Go — pilot nhỏ nhất:**
 
+Không áp dụng ở quyết định hiện tại; chỉ tiến hành pilot sau khi hoàn thành các kiểm chứng bên dưới.
+
 **Nếu Not Yet — cần kiểm chứng gì trước:**
+- Dùng tối đa 10 lỗi thư viện/môi trường đã xảy ra gần đây; loại bỏ token, đường dẫn nhạy cảm và thông tin nội bộ khỏi log trước khi đưa vào thử nghiệm.
+- Với mỗi lỗi, cung cấp log cùng OS, phiên bản Python và thông tin môi trường liên quan; AI chỉ giải thích nguyên nhân và đề xuất lệnh, lập trình viên tự đánh giá rồi tự chạy. Không cấp quyền cho AI thực thi lệnh.
+- Ghi thời gian xử lý, việc có giải quyết được ngay lần thử đầu không, mức độ người dùng hiểu/đánh giá được đề xuất, và mọi trường hợp đề xuất sai hoặc có nguy cơ phá môi trường. Chỉ tuyên bố đạt mục tiêu khi có đủ 10 trường hợp đo được.
+- Kiểm tra trước khi thử mọi lệnh có thể sửa môi trường rằng có bản backup/khôi phục khả dụng; nếu chưa bảo đảm khôi phục thì không chạy lệnh đó.
 
 **Nếu No-Go — nên làm gì thay AI:**
 
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+Không áp dụng vì nhóm chọn Not Yet, chưa bác bỏ hướng AI.
+
+**Ngưỡng dừng:** Sau tối đa 10 trường hợp thử nghiệm, nếu thời gian xử lý trung vị vẫn từ 20 phút trở lên hoặc dưới 8/10 trường hợp giải quyết được sau đề xuất đầu tiên, dừng hướng AI và quay về checklist chẩn đoán thủ công kết hợp công cụ quản lý/khóa dependency như `uv` hoặc `pip-tools`. Dừng ngay nếu có một đề xuất dẫn đến lệnh phá hủy dữ liệu hoặc làm hỏng môi trường; giữ nguyên nguyên tắc người dùng tự xác nhận và thực thi lệnh.
 
 ---
 
