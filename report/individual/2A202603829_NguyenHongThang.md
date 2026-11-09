@@ -45,67 +45,152 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | 2 |Tự động tổng hợp chỉ số điện, nước và lập thông báo thanh toán. |Công việc lặp lại hàng tháng, có quy trình rõ ràng, nhiều dữ liệu đầu vào và đầu ra có thể kiểm chứng. Có tiềm năng ứng dụng OCR và AI Agent để tự động hóa toàn bộ quy trình. | Độ chính xác khi đọc ảnh công tơ; khả năng lấy dữ liệu điện điều hòa; mức độ khác biệt giữa các biểu mẫu thanh toán.|
 | 3 |Tiếp nhận và phân loại yêu cầu sửa chữa của khách thuê. |Thông tin đến từ nhiều kênh, ảnh hưởng trực tiếp đến trải nghiệm khách thuê và hiệu quả vận hành. AI có thể phân loại sự cố, xác định mức độ ưu tiên và điều phối kỹ thuật viên. |Số lượng sự cố thực tế mỗi tháng; thời gian xử lý hiện tại; khả năng tích hợp các kênh liên lạc. |
 
-### Problem Card #1
+### Problem Card #1 - AI Homework Assistant
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
+| Job Story | Khi giáo viên giao bài tập qua nhiều kênh như LMS, Zalo, vở ghi và thông báo trực tiếp, tôi muốn tổng hợp tất cả nhiệm vụ học tập vào một nơi và theo dõi tiến độ hoàn thành, để không bỏ sót bài và chủ động hỗ trợ con học tập. |
+| Actor |Phụ huynh (người sử dụng chính); học sinh (người thực hiện); giáo viên (người giao bài). |
+| Thời điểm / bối cảnh |Hàng ngày, đặc biệt sau giờ học và buổi tối khi phụ huynh kiểm tra bài tập, kế hoạch học tập và deadline của con. |
+| Quy trình hiện tại (3–7 bước) |1. Nhận thông báo giao bài từ giáo viên. 2. Đăng nhập LMS kiểm tra từng môn. 3. Đọc thông báo Zalo, email và kiểm tra vở ghi. 4. Ghi lại bài tập và hạn nộp. 5. Hỏi con về tình trạng hoàn thành. 6. Kiểm tra bài làm và trạng thái nộp trên LMS. 7. Nhắc nhở những nhiệm vụ chưa hoàn thành. |
+| Bottleneck (bước nào, mất bao nhiêu phút) |Bước 2–4: phải chuyển đổi giữa nhiều nguồn và tổng hợp thủ công. Bước 5–6: khó xác minh tình trạng thực tế. Giả định ban đầu: 20–40 phút/ngày. |
+| Impact (nếu không giải thì sao) |Bỏ sót bài, quên deadline, học sinh bị động, phụ huynh mất thời gian, phát sinh mâu thuẫn do nhắc nhở thường xuyên. |
+| Success metric (baseline → target) |Baseline giả định: 20–40 phút/ngày. Target: giảm ít nhất 50% thời gian tổng hợp; ít nhất 95% nhiệm vụ được ghi nhận chính xác; giảm ít nhất 50% số bài bị bỏ sót. |
+| Phương án không dùng AI |Google Sheets hoặc ứng dụng quản lý công việc, phụ huynh nhập bài tập, môn học, deadline và trạng thái thủ công. |
+| Giả thuyết về AI (nếu có) |AI sử dụng OCR, NLP và Agent để đọc thông báo, ảnh chụp và dữ liệu LMS; tự trích xuất môn học, nội dung, deadline, phân loại nhiệm vụ, phát hiện trùng lặp và nhắc nhở. |
+| Cảm nhận nhanh | AI hỗ trợ thu thập, xử lý và điều phối; phụ huynh xác nhận thông tin quan trọng.|
 
 Quy trình nháp hiện tại:
 
-```text
+Giáo viên giao bài
+       ↓
+Phụ huynh nhận thông báo
+       ↓
+Kiểm tra LMS + Zalo + vở ghi
+       ↓
+Tự tổng hợp danh sách bài tập
+       ↓
+Hỏi con về tiến độ
+       ↓
+Kiểm tra bài làm và trạng thái nộp
+       ↓
+Nhắc nhở và theo dõi
+
+Quy trình mong muốn
+    LMS + Zalo + Email + Ảnh chụp
+                 ↓
+          AI thu thập dữ liệu
+                 ↓
+       OCR + NLP trích xuất bài tập
+                 ↓
+      Danh sách nhiệm vụ tập trung
+                 ↓
+       Phụ huynh xác nhận dữ liệu
+                 ↓
+      Theo dõi tiến độ + Deadline
+                 ↓
+       Nhắc nhở + Báo cáo hàng ngày
 
 ```
 
-### Problem Card #2
+### Problem Card #2 - Tự động lập thông báo tiền điện, nước
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
+| Job Story | Khi đến kỳ thanh toán tiền điện, nước cho các căn hộ và văn phòng cho thuê, tôi muốn tự động thu thập, tổng hợp và tính toán chỉ số tiêu thụ để lập thông báo thanh toán chính xác, nhanh chóng và giảm công việc thủ công.|
+| Actor |Chủ nhà, người quản lý tòa nhà, kế toán và khách thuê. |
+| Thời điểm / bối cảnh |Định kỳ hàng tháng, khi chốt chỉ số công tơ và lập thông báo thanh toán cho khách thuê. |
+| Quy trình hiện tại (3–7 bước) |1. Chụp ảnh công tơ nước và công tơ điện, Truy xuất dữ liệu điện từ phần mềm giám sát. 2. Nhập chỉ số điện, nước vào Excel. 3. Đối chiếu chỉ số với kỳ trước. 4. Tính sản lượng và chi phí. 5. Nhập dữ liệu vào mẫu thông báo thanh toán. 6. Xuất và gửi thông báo cho khách thuê. |
+| Bottleneck (bước nào, mất bao nhiêu phút) |Bước 2–3: nhập liệu và đối chiếu nhiều nguồn. Bước 4–5: tính toán, kiểm tra và nhập lại dữ liệu. Giả định ban đầu: 5–10 phút/đơn vị thuê, chưa tính xử lý sai lệch. |
+| Impact (nếu không giải thì sao) |Tốn thời gian, nhầm chỉ số, sai số tiền thanh toán, khiếu nại từ khách thuê và khó truy xuất lịch sử. |
+| Success metric (baseline → target) |Baseline giả định: 5–10 phút/đơn vị. Target: giảm ít nhất 70% thời gian lập thông báo; độ chính xác tính toán đạt 100% trên bộ dữ liệu đã xác nhận; giảm tối đa nhập liệu trùng lặp. |
+| Phương án không dùng AI |Excel có công thức tự động, biểu mẫu nhập liệu thống nhất, Power Query để tổng hợp dữ liệu. |
+| Giả thuyết về AI (nếu có) |OCR đọc chỉ số công tơ từ ảnh; Agent thu thập dữ liệu từ Excel/phần mềm điều hòa, đối chiếu kỳ trước, phát hiện bất thường và tự động tạo thông báo theo mẫu. |
+| Cảm nhận nhanh | Workflow + Agent. OCR và AI xử lý dữ liệu đầu vào; công thức tính tiền phải được kiểm soát bằng quy tắc xác định. |
 
 Quy trình nháp hiện tại:
+Đến kỳ chốt tiền hàng tháng
+          ↓
+Chụp ảnh công tơ điện, nước
+          ↓
+Truy xuất dữ liệu điện điều hòa
+          ↓
+Nhập và tổng hợp Excel
+          ↓
+Đối chiếu kỳ trước
+          ↓
+Tính toán tiền điện, nước
+          ↓
+Lập thông báo và gửi khách thuê
 
-```text
-
+Quy trình mong muốn
+    Ảnh công tơ + File Excel + Dữ liệu điều hòa
+                    ↓
+              AI thu thập dữ liệu
+                    ↓
+           OCR + Chuẩn hóa dữ liệu
+                    ↓
+          Đối chiếu và phát hiện lỗi
+                    ↓
+          Tính toán theo quy tắc
+                    ↓
+          Người quản lý xác nhận
+                    ↓
+          Tạo thông báo tự động
+                    ↓
+             Gửi khách thuê
 ```
 
-### Problem Card #3
+### Problem Card #3 - – Quản lý yêu cầu sửa chữa của khách thuê
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi …, tôi muốn …, để … |
-| Actor | |
-| Thời điểm / bối cảnh | |
-| Quy trình hiện tại (3–7 bước) | |
-| Bottleneck (bước nào, mất bao nhiêu phút) | |
-| Impact (nếu không giải thì sao) | |
-| Success metric (baseline → target) | |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
-| Cảm nhận nhanh | No AI / Rule / Workflow / Agent / Chưa biết |
+| Job Story |Khi khách thuê phản ánh sự cố điện, nước, điều hòa hoặc thiết bị trong căn hộ, tôi muốn tự động tiếp nhận, phân loại và theo dõi yêu cầu sửa chữa để xử lý nhanh chóng, tránh thất lạc thông tin và nâng cao chất lượng dịch vụ.|
+| Actor |Khách thuê (người phản ánh); người quản lý tòa nhà (người tiếp nhận và điều phối); kỹ thuật viên (người xử lý); chủ nhà (người giám sát). |
+| Thời điểm / bối cảnh |	Phát sinh hàng ngày, bất cứ khi nào khách thuê gặp sự cố trong quá trình sử dụng căn hộ hoặc văn phòng. |
+| Quy trình hiện tại (3–7 bước) |1. Khách thuê gọi điện hoặc nhắn tin Zalo báo sự cố. 2. Người quản lý tiếp nhận và ghi nhớ thông tin. 3. Hỏi thêm về vị trí, loại sự cố và mức độ nghiêm trọng. 4. Liên hệ kỹ thuật viên phù hợp. 5. Theo dõi quá trình sửa chữa. 6. Xác nhận với khách thuê sau khi xử lý. 7. Lưu lại thông tin và chi phí sửa chữa. |
+| Bottleneck (bước nào, mất bao nhiêu phút) |Bước 1–3: thông tin không đầy đủ, phải hỏi lại nhiều lần. Bước 4–5: mất thời gian tìm người xử lý và theo dõi. Giả định ban đầu: 10–20 phút tiếp nhận và điều phối mỗi sự cố, chưa tính thời gian sửa chữa. |
+| Impact (nếu không giải thì sao) |Sự cố bị xử lý chậm, thông tin thất lạc, khách thuê không hài lòng, khó kiểm soát chi phí và lịch sử bảo trì thiết bị. |
+| Success metric (baseline → target) |Baseline giả định: 10–20 phút tiếp nhận và điều phối/sự cố. Target: giảm ít nhất 50% thời gian tiếp nhận; 100% yêu cầu được ghi nhận; ít nhất 90% yêu cầu được phân loại đúng và có người phụ trách. |
+| Phương án không dùng AI |Google Forms hoặc ứng dụng quản lý ticket; khách thuê điền biểu mẫu, người quản lý phân công kỹ thuật viên và cập nhật trạng thái thủ công. |
+| Giả thuyết về AI (nếu có) |AI Agent đọc nội dung tin nhắn, nhận diện loại sự cố, vị trí, mức độ ưu tiên; tự tạo ticket, đề xuất kỹ thuật viên, nhắc tiến độ và tổng hợp báo cáo. |
+| Cảm nhận nhanh | Workflow + Agent. AI hỗ trợ tiếp nhận, phân loại và điều phối; người quản lý quyết định với sự cố nghiêm trọng hoặc cần phê duyệt chi phí. |
 
 Quy trình nháp hiện tại:
+Khách thuê phát sinh sự cố
+           ↓
+Gọi điện / Nhắn Zalo
+           ↓
+Người quản lý tiếp nhận
+           ↓
+Hỏi thêm thông tin và xác định sự cố
+           ↓
+Tìm kiếm kỹ thuật viên
+           ↓
+Điều phối và theo dõi sửa chữa
+           ↓
+Xác nhận kết quả với khách thuê
+           ↓
+Lưu lịch sử sửa chữa
 
-```text
-
+Quy trình mong muốn
+    Khách thuê gửi tin nhắn / Ảnh / Video
+                 ↓
+             AI tiếp nhận
+                 ↓
+       Phân loại loại sự cố, vị trí
+                 ↓
+        Đánh giá mức độ ưu tiên
+                 ↓
+          Tạo phiếu yêu cầu
+                 ↓
+       Đề xuất kỹ thuật viên phù hợp
+                 ↓
+       Người quản lý xác nhận
+                 ↓
+       Theo dõi tiến độ sửa chữa
+                 ↓
+       Xác nhận và lưu lịch sử
 ```
 
 ### Card muốn pitch nhất
