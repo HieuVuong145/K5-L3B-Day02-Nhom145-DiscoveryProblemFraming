@@ -269,18 +269,28 @@ Mặc dù bài toán có cả độ mơ hồ và độ phức tạp cao trong m�
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | |
-| **Judgment** — con người cân nhắc, quyết định gì? | |
-| **Action** — hành động cuối cùng là gì, ai làm? | |
-| **Outcome** — đo kết quả bằng gì? | |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? | |
+| **Prediction** — AI dự đoán / tạo ra gì? |AI phân tích log và thông tin môi trường để dự đoán nhóm lỗi, nguyên nhân có khả năng xảy ra và đề xuất phương án xử lý kèm giải thích. |
+| **Judgment** — con người cân nhắc, quyết định gì? |Lập trình viên đánh giá nguyên nhân AI đưa ra, đối chiếu với cấu hình và quyết định có chấp nhận phương án hay không. |
+| **Action** — hành động cuối cùng là gì, ai làm? |Lập trình viên thực hiện phương án được lựa chọn, kiểm tra lại chương trình và xác nhận kết quả. AI không tự chạy lệnh. |
+| **Outcome** — đo kết quả bằng gì? |Giảm thời gian xử lý lỗi, giảm số lần thử sai, tăng tỷ lệ khắc phục thành công và không gây lỗi mới. |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? |Error log, traceback, phiên bản Python, OS, danh sách package, file requirements hoặc lockfile nếu có. Các dữ liệu nhạy cảm phải được loại bỏ trước khi đưa vào AI. |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện? |Ghi nhận phương án AI đề xuất có đúng không, người dùng có chấp nhận không, số lần thử và trạng thái môi trường sau khi xử lý. |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
+- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**?
+Augment - AI hỗ trợ lập trình viên.
+AI được sử dụng để phân tích lỗi, giải thích nguyên nhân và đề xuất phương án. Lập trình viên vẫn là người kiểm tra, lựa chọn và thực hiện.
 - AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+Trong phạm vi bài toán này, chẩn đoán sai và đề xuất một phương án sửa không an toàn có thể nguy hiểm hơn việc chưa xác định được nguyên nhân.
 
+Ví dụ, AI nhận định sai nguyên nhân và đề xuất nâng cấp hàng loạt package có thể tạo thêm xung đột dependency. Ngược lại, nếu AI bỏ sót nguyên nhân, người dùng thường vẫn có thể quay về quy trình tra cứu thủ công.
+
+Biện pháp kiểm soát:
+- AI giải thích lý do của đề xuất và cảnh báo các thay đổi có rủi ro.
+- Không tự thực thi lệnh sửa.
+- Lập trình viên kiểm tra trước khi áp dụng.
+- Khi thiếu dữ liệu, AI phải yêu cầu bổ sung hoặc chuyển về xử lý thủ công.
 ---
 
 ## 7. Problem Statement v1 + tiêu chí đánh giá (CP6)
