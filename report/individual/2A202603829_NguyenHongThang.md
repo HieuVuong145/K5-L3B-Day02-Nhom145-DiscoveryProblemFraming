@@ -61,7 +61,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | Cảm nhận nhanh | AI hỗ trợ thu thập, xử lý và điều phối; phụ huynh xác nhận thông tin quan trọng.|
 
 Quy trình nháp hiện tại:
-
+```text
 Giáo viên giao bài
        ↓
 Phụ huynh nhận thông báo
@@ -77,6 +77,7 @@ Kiểm tra bài làm và trạng thái nộp
 Nhắc nhở và theo dõi
 
 Quy trình mong muốn
+```text
     LMS + Zalo + Email + Ảnh chụp
                  ↓
           AI thu thập dữ liệu
@@ -90,7 +91,6 @@ Quy trình mong muốn
       Theo dõi tiến độ + Deadline
                  ↓
        Nhắc nhở + Báo cáo hàng ngày
-```
 
 ### Problem Card #2 - Tự động lập thông báo tiền điện, nước
 
@@ -108,7 +108,6 @@ Quy trình mong muốn
 | Cảm nhận nhanh | Workflow + Agent. OCR và AI xử lý dữ liệu đầu vào; công thức tính tiền phải được kiểm soát bằng quy tắc xác định. |
 
 **Quy trình nháp hiện tại:**
-
 ```text
 Đến kỳ chốt tiền hàng tháng
           ↓
@@ -126,7 +125,6 @@ Lập thông báo và gửi khách thuê
 ```
 
 **Quy trình mong muốn:**
-
 ```text
 Ảnh công tơ + File Excel + Dữ liệu điều hòa
                     ↓
@@ -143,7 +141,6 @@ Lập thông báo và gửi khách thuê
           Tạo thông báo tự động
                     ↓
               Gửi khách thuê
-```
 
 ### Problem Card #3 - – Quản lý yêu cầu sửa chữa của khách thuê
 
@@ -161,6 +158,7 @@ Lập thông báo và gửi khách thuê
 | Cảm nhận nhanh | Workflow + Agent. AI hỗ trợ tiếp nhận, phân loại và điều phối; người quản lý quyết định với sự cố nghiêm trọng hoặc cần phê duyệt chi phí. |
 
 Quy trình nháp hiện tại:
+```text
 Khách thuê phát sinh sự cố
            ↓
 Gọi điện / Nhắn Zalo
