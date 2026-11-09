@@ -196,9 +196,9 @@ Quy trình mong muốn
 
 ### Card muốn pitch nhất
 
-- Card số:
-- Vì sao:
-- Câu hỏi muốn nhóm phản biện:
+- Card số: 01
+- Vì sao: Xuất phát từ nhu cầu thực tế của phụ huynh: bài tập được giao qua nhiều kênh như LMS, Zalo, vở ghi hoặc thông báo trực tiếp. Phụ huynh mất thời gian tổng hợp, theo dõi và nhắc con hoàn thành bài. Tôi muốn giải quyết vấn đề này bằng một trợ lý AI.
+- Câu hỏi muốn nhóm phản biện: Làm thế nào để lấy thông tin bài tập từ LMS một cách tự động và ổn định? Nếu LMS không cung cấp API hoặc không cho phép truy cập dữ liệu thì có giải pháp thay thế nào?
 
 ### AI đã phản biện card thế nào
 
