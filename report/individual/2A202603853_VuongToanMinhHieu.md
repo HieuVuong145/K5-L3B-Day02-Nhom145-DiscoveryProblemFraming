@@ -1,4 +1,4 @@
-# Báo cáo cá nhân — MSSV_HoTen
+# Báo cáo cá nhân — 2A202603853_VuongToanMinhHieu
 
 > Đổi tên file theo quy tắc `MSSV_HoTen.md`, ví dụ `20241234_NguyenVanAn.md` (MSSV trước, dấu `_`, họ tên viết liền không dấu). Sửa cả dòng tiêu đề phía trên cho khớp.
 > Template chi tiết và prompt mẫu cho từng mục: [docs/01-worksheet.md](../../docs/01-worksheet.md).
@@ -51,7 +51,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | Actor | Người tham gia giao thông |
 | Thời điểm / bối cảnh | Giờ cao điểm |
 | Quy trình hiện tại (3–7 bước) | Mở map -> Chọn lộ trình hay đi -> Gặp đoạn đường tắc -> Mở map tìm đường đi khác -> Chọn đường vòng và di chuyển -> Đi muộn |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Đi vào đường tắc đã mất thời gian và mất thêm thời gian tự tìm đường |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 4 — tấp lề tra đường tắt / nhóm FB, mất 8 phút; bước 3 kẹt cứng 12 phút cũng cần được cân nhắc khi chọn bottleneck chính. |
 | Impact (nếu không giải thì sao) | Mất thêm 20-30p di chuyển |
 | Success metric (baseline → target) | Giảm thời gian tham gia giao thông |
 | Phương án không dùng AI | Xuất phát sớm hơn khung giờ bình thường hay đi khoảng 30p |
@@ -126,7 +126,9 @@ HIỆN TẠI — 210 phút (3,5 giờ)
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
-| | | |
+| Actor “người tham gia giao thông” còn rộng; nên giới hạn theo phương tiện, tuyến đường hoặc mục đích di chuyển. | Có | Chưa thu hẹp vì chưa có thêm dữ liệu về phương tiện/tuyến đường cụ thể; cần bổ sung trước khi chốt card. |
+| Bottleneck đang gộp hai điểm (kẹt tại điểm nóng 12 phút và tấp lề tìm đường 8 phút), còn metric “giảm thời gian tham gia giao thông” chưa có baseline/target rõ ràng. | Có | Đã sửa bottleneck trong card để nêu cụ thể bước 4 và 8 phút, đồng thời ghi nhận bước 3 mất 12 phút. Metric vẫn cần target và cách đo rõ hơn. |
+| Giả thuyết dựa vào dữ liệu camera công cộng và dự báo trước 10–15 phút nhưng chưa chứng minh có thể tiếp cận dữ liệu đó; cũng có thể đang chọn Workflow/Agent quá sớm. | Có | Chưa đổi giả thuyết; cần kiểm tra tính sẵn có của dữ liệu và so sánh với phương án đơn giản hơn như cảnh báo dựa trên dữ liệu bản đồ hiện có. |
 
 ---
 
@@ -134,16 +136,16 @@ HIỆN TẠI — 210 phút (3,5 giờ)
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
+| Pitch Problem Card | Trình bày 3 candidate: ùn tắc giao thông giờ cao điểm, viết Daily Standup cuối ngày và quy trình đi khám nhiều bước. | Nhóm có thêm các góc nhìn về dự báo ùn tắc, tổng hợp công việc và thời gian chờ khám để đưa vào thảo luận, so sánh với candidate của các thành viên khác. |
+| Phản biện bài của bạn khác | Với candidate chuyển báo cáo dài thành slide, tôi hỏi rằng đã có nhiều công cụ AI làm việc này thì giải pháp đề xuất sẽ khác biệt ở điểm nào. | Đưa thêm tiêu chí về mức độ khác biệt và việc xác định đúng pain vào phần thảo luận candidate. |
+| Nhận phản biện | Trường hỏi Google Maps đã có giải pháp cho ùn tắc, vậy những tình huống thực tế nào Maps không cập nhật được? | Tôi nhận ra card cần nêu rõ khoảng trống của cách xử lý hiện tại, thay vì chỉ khẳng định cần biết trước điểm tắc. |
 | Gom cluster / cây OST | | |
 | Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Kiểm chứng / research | Tôi tham gia phần kiểm chứng và research cho candidate nhóm chọn là xử lý lỗi cài đặt thư viện. Nhóm ghi nhận 3 cuộc phỏng vấn và 8 phản hồi khảo sát; research các công cụ Astral uv, GitHub Copilot in the CLI và pip-tools. | Kết quả tổng hợp ghi nhận 10/11 người từng mất 45–90 phút xử lý lỗi thư viện/môi trường; đồng thời có phản hồi phản bác rằng Docker hoặc lock file có thể giảm đáng kể vấn đề. Research giúp nhóm nhận diện công cụ hiện có và những khoảng trống còn lại. |
+| Quy trình nhóm |  |  |
+| Problem Statement |  | |
+| Mức can thiệp AI |  |  |
+| Quyết định | Tôi đánh giá bốn rủi ro Value, Usability, Feasibility và Viability, sau đó chọn **Not Yet** thay vì triển khai ngay. | Ghi nhận pain có bằng chứng ban đầu, nhưng cần kiểm chứng thêm khả năng sử dụng, tính khả thi, độ an toàn của đề xuất và cơ chế backup/rollback trước khi thử nghiệm rộng. Tôi đề xuất pilot giới hạn tối đa 10 trường hợp và ngưỡng dừng đo được. |
 
 ---
 
@@ -151,12 +153,12 @@ HIỆN TẠI — 210 phút (3,5 giờ)
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Gợi ý thêm các tình huống/problem để mở rộng danh sách scan. | Giúp có thêm góc nhìn ngoài những việc đã nghĩ tới; tôi giữ lại ý 2 và 5 vì đây là những tình huống bản thân thường gặp. | Gợi ý của AI tự nó không chứng minh vấn đề xảy ra thường xuyên hay có impact. | Chỉ giữ những ý khớp trải nghiệm thật; dấu hiệu và mức độ của problem cần dựa trên quan sát của mình. |
+| CP2 Problem Card | Đóng vai PM hoài nghi để rà soát card giao thông #1. | Chỉ ra actor còn rộng, hai bottleneck đang bị gộp, metric chưa đo được và giả thuyết dữ liệu camera/dự báo chưa được xác minh. | Phản biện chỉ nêu lỗ hổng, không cung cấp bằng chứng thực tế để xác định dữ liệu nào có thể truy cập hoặc target nào khả thi. | Tôi ghi nhận cần thu hẹp actor, tách bottleneck, đo baseline/target và kiểm tra dữ liệu trước khi giữ giả thuyết AI; không xem gợi ý của AI là kết luận đã kiểm chứng. |
+| CP4 Research | Hỗ trợ gợi ý hướng tìm kiếm và đối chiếu sơ bộ các công cụ giải quyết vấn đề lỗi môi trường/thư viện. | Giúp tổ chức research theo bước của quy trình và nhận diện khoảng trống giữa quản lý dependency bằng rule với việc giải thích lỗi cho người dùng. | Mô tả hoặc nhận định do AI đưa ra có thể chung chung, lỗi thời hoặc không khớp phiên bản/công cụ; không thể xem là nguồn xác thực. | Đối chiếu thông tin với tài liệu gốc và chỉ ghi các link đã tự mở, kiểm tra; không dùng AI thay cho phỏng vấn/khảo sát người thật. |
+| CP5 Quy trình |  |  |  |  |
+| CP5–6 Problem Statement |  |  |  |  |
+| CP6 Mức can thiệp / quyết định | Dùng AI để hỗ trợ hệ thống hóa bốn rủi ro, cân nhắc quyết định và diễn đạt các kiểm chứng/ngưỡng dừng cho phần quyết định. | Giúp nối các bằng chứng CP4 và các giả định chưa kiểm chứng với lý do chọn **Not Yet**, đồng thời chuyển bước tiếp theo thành các tiêu chí có thể đo. | Đề xuất ban đầu vẫn dựa trên mẫu nhỏ; tính chính xác của AI, an toàn lệnh, backup/rollback và chi phí chưa được thử nghiệm thực tế. | Tôi xem các mức rủi ro và ngưỡng pilot là đề xuất cần cân nhắc, đối chiếu với bằng chứng nhóm; quyết định Not Yet vì Usability và Feasibility vẫn còn rủi ro cao. |
 
 ---
 
@@ -164,19 +166,19 @@ HIỆN TẠI — 210 phút (3,5 giờ)
 
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
-**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+**6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?** Trả lời: Problem của các thành viên khác trong team mang tính thực tế nhiều hơn, problem to solution chứ không phải ngược lại, bản thân vẫn còn chưa brainstorm, mở rộng được phạm vi khi đặt vấn đề
 
-**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?** Trả lời: Có, hơn một nửa các case mà thành viên đưa ra đều là solution first, nhóm đã có các câu hỏi cho chủ nhân problem đó để phản biện và góp ý sau đó thay đổi.
 
-**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.** Tôi có nhưng chưa biết sửa lại vấn đề của mình như nào khi có thành viên hỏi tôi về chủ đề tắc đường và google maps, làm thế nào để độ trễ cập nhật dữ liệu là thấp nhất.
 
-**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?** Kết quả kiểm chứng đưa ra khác hẳn với những suy nghĩ ban đầu tôi đặt ra khi tiếp cận problem đó.
 
-**6.5. Điều khó nhất khi viết Problem Statement là gì?**
+**6.5. Điều khó nhất khi viết Problem Statement là gì?** Brainstorm một vấn đề thực sự mang tính thực tiễn với bằng chứng có thể chứng minh được bằng con số, dữ liệu,...
 
-**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?** Nếu làm lại tôi sẽ phân tích vấn đề xem đã có những giải pháp đề xuất nào chưa nếu không có mới xem xét lựa chọn đề tài. Tôi sẽ phản biện nhóm mạnh hơn ở điểm sử dụng dữ liệu thực để chứng minh.
 
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình. Trả lời: Phát sinh problem từ một lĩnh vực nào đó có thể do lặp đi lặp lại, vấn đề gây mất thời gian, thiếu thông tin xác thức và phả ánh của người khác. Xác định được vấn đề sẽ phải đi trực quan hoá vấn đề bằng Card gồm các trường như actor, người bị ảnh hưởng, tại sao, bottlenecks của vấn đề, giải pháp nếu không có và có AI. Thống kê và gom các problem rồi phân thành các nhóm có độ giống nhau rồi xét tính thực thi được giải pháp với vấn đề bằng con số. Sau khi chọn được vấn đề sẽ vạch ra giới hạn của bài toán. Nếu bài toán dễ ở mức có thể triển khai giải pháp tối ưu 1 cách nhanh chóng mà không cần AI thì sẽ triển khai luôn. Còn bắt buộc cần sử dụng AI để có thể tối thiểu hoá chi phí giải quyết vấn đề và thời gian thì nên sử dụng. 
 
 ---
 
