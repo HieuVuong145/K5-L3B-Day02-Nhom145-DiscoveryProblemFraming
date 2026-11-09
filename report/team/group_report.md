@@ -46,10 +46,22 @@
 Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
 
 ```text
-OUTCOME: 
-├── Opportunity A: 
-├── Opportunity B: 
-└── Opportunity C: 
+OUTCOME:
+Giảm thời gian và sai sót trong quá trình
+xử lý thông tin, ra quyết định và
+thực hiện công việc.
+
+├── Opportunity A:
+│   Khó khăn khi thu thập, chọn lọc và
+│   tổng hợp thông tin từ nhiều nguồn.
+│
+├── Opportunity B:
+│   Khó khăn khi đối chiếu, phân tích
+│   thông tin và đưa ra quyết định.
+│
+└── Opportunity C:
+    Thiếu thông tin kịp thời để theo dõi,
+    phối hợp và tối ưu quy trình.
 ```
 
 Những ý đã gạch bỏ vì là solution đội lốt opportunity:
