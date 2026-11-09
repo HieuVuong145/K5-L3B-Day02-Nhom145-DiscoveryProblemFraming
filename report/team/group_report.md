@@ -187,16 +187,20 @@ Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người*
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** |Lập trình viên, đặc biệt là người thường xuyên cài đặt, cập nhật và quản lý thư viện trong các dự án Python.|
+| **Quy trình** |Khi cài đặt thư viện gặp lỗi, lập trình viên đọc thông báo lỗi, kiểm tra môi trường, tìm kiếm nguyên nhân trên tài liệu hoặc diễn đàn, lựa chọn phương án khắc phục, thử thực hiện và chạy lại để xác nhận kết quả.|
+| **Bottleneck** |Công đoạn thử phương án khắc phục và kiểm tra lại mất nhiều thời gian do lập trình viên phải tự lựa chọn, thực hiện và đánh giá nhiều cách xử lý. Công đoạn này hiện mất khoảng 30 phút, chiếm 49,2% tổng thời gian xử lý 61 phút trong trường hợp đã khảo sát. |
+| **Impact** |Tăng thời gian xử lý sự cố, làm gián đoạn quá trình phát triển phần mềm và khiến lập trình viên phải lặp lại các thao tác tra cứu, cài đặt và kiểm tra.|
+| **Success Metric** (baseline → target, cách đo) |Thời gian xử lý: 61 phút → ≤ 40 phút/lỗi. Thời gian tại bottleneck: 30 phút → ≤ 15 phút. Cách đo: ghi nhận thời gian từ lúc phát sinh lỗi đến khi cài đặt thành công, đồng thời đo riêng thời gian thử và kiểm tra phương án trên cùng một tập lỗi thử nghiệm. Đây là mục tiêu pilot cần kiểm chứng, không phải kết quả đã đạt được. |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) |Hệ thống chỉ hỗ trợ phân tích log, kiểm tra thông tin môi trường và đề xuất phương án. AI không tự động thực thi lệnh, thay đổi phiên bản Python, xóa hoặc cài đặt thư viện, sửa file cấu hình hay thay đổi dependency của dự án khi chưa có sự phê duyệt của lập trình viên. Với lỗi liên quan đến bảo mật, dữ liệu nhạy cảm hoặc không đủ thông tin để xác định nguyên nhân, hệ thống phải cảnh báo và yêu cầu con người kiểm tra.|
 
 Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
-
--
+- Phản biện 1: Việc xử lý lỗi cài đặt thư viện đã có nhiều công cụ hỗ trợ như Google, Stack Overflow, GitHub và các AI coding assistant. Cần làm rõ giải pháp của nhóm khác biệt ở điểm nào.
+    Ý kiến nhóm: Đồng ý một phần. Nhóm không hướng tới xây dựng một công cụ hỏi đáp lập trình tổng quát, mà tập trung vào quy trình phân tích lỗi cài đặt thư viện dựa trên error log và thông tin môi trường cụ thể để đề xuất phương án khắc phục phù hợp.
+- Phản biện 2: Không phải lỗi cài đặt nào cũng cần AI. Nhiều lỗi phổ biến có thể xử lý bằng checklist hoặc các quy tắc cố định.
+    Ý kiến nhóm: Đồng ý. Nhóm sẽ so sánh phương án No AI, Rule, Workflow và Agent để xác định trường hợp nào cần AI, tránh sử dụng AI không cần thiết.
+- Phản biện 3: AI có thể đề xuất lệnh không phù hợp với môi trường hoặc gây xung đột dependency nếu người dùng thực hiện máy móc.
+    Ý kiến nhóm: Đồng ý. Hệ thống chỉ đề xuất phương án và giải thích nguyên nhân, không tự động thực thi lệnh. Lập trình viên phải kiểm tra và phê duyệt trước khi áp dụng.
 
 ---
 
