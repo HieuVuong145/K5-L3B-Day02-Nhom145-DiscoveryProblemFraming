@@ -27,7 +27,9 @@
 | 7 |Nguyễn Đình Trường |Khi cần tìm một linh kiện điện tử phù hợp với yêu cầu kỹ thuật, tôi muốn so sánh được thông số và khả năng tương thích của nhiều linh kiện, để tránh chọn sai linh kiện và phải thay thế. |Kỹ sư thiết kế phần cứng |Công đoạn đọc datasheet, trích xuất thông số và đối chiếu khả năng tương thích mất khoảng 35–55 phút. Tổng quy trình tìm kiếm và lựa chọn một linh kiện mất khoảng 60–95 phút. | |
 | 8 |Nguyễn Đình Trường |	Khi cần viết tài liệu kỹ thuật từ ghi chú hoặc kết quả công việc, tôi muốn trình bày thông tin theo một cấu trúc thống nhất, để giảm công sức biên soạn và hạn chế sai lệch. |Người viết tài liệu kỹ thuật |Bước 3 và 4: Phân loại thông tin và biên soạn tài liệu. Thông tin đầu vào nằm ở nhiều nguồn, không đồng nhất về cách diễn đạt và mức độ chi tiết. Người viết phải tự xác định nội dung nào thuộc mục nào, chuyển ghi chú thành câu văn kỹ thuật và đảm bảo không làm sai lệch ý nghĩa ban đầu. Đây là hai công đoạn có khả năng tiêu tốn nhiều thời gian nhất. | |
 | 9 |Nguyễn Đình Trường |Khi gặp lỗi trong quá trình cài đặt thư viện lập trình, tôi muốn kiểm tra nguyên nhân và cách khắc phục theo một quy trình thống nhất, để không phải xử lý lại từ đầu. |	Lập trình viên |Bước 5 và bước 6: Thử phương án khắc phục và kiểm tra lại, mất khoảng 30 phút (chiếm 49,2% tổng thời gian 61 phút). | |
-| 10 |Nguyễn Hồng Thắng |AI Homework Assistant |Phụ huynh (người sử dụng chính); học sinh (người thực hiện); giáo viên (người giao bài). |Bước 2–4: phải chuyển đổi giữa nhiều nguồn và tổng hợp thủ công. Bước 5–6: khó xác minh tình trạng thực tế. Giả định ban đầu: 20–40 phút/ngày. | |
+| 10 |Nguyễn Hồng Thắng |AI Homework Assistant |Phụ huynh (người sử dụng chính); học sinh (người thực hiện); giáo viên (người giao bài). |Bước 2–4: phải chuyển đổi giữa nhiều nguồn và tổng hợp thủ công. Bước 5–6: khó xác minh tình trạng thực tế. Giả định ban đầu: 20–40 phút/ngày. |Hùng: Vẫn có phần lớn bài tập được giao qua bài vở, xử lý kiểu gì? Việc tổng hợp từ nhiều nguồn thì kết nối với Zalo, website trường học và Google Classroom bằng cách nào? Các nền tảng này có hỗ trợ API và cấp quyền truy cập phù hợp hay không?
+
+ |
 | 11 |Nguyễn Hồng Thắng |Tự động lập thông báo tiền điện, nước |Chủ nhà, người quản lý tòa nhà, kế toán và khách thuê. |Bước 2–4: nhập liệu và đối chiếu nhiều nguồn. Bước 5–6: tính toán, kiểm tra và nhập lại dữ liệu. Giả định ban đầu: 5–10 phút/đơn vị thuê, chưa tính xử lý sai lệch. | |
 | 12 |Nguyễn Hồng Thắng |Quản lý yêu cầu sửa chữa của khách thuê |Khách thuê (người phản ánh); người quản lý tòa nhà (người tiếp nhận và điều phối); kỹ thuật viên (người xử lý); chủ nhà (người giám sát). |Bước 1–3: thông tin không đầy đủ, phải hỏi lại nhiều lần. Bước 4–5: mất thời gian tìm người xử lý và theo dõi. Giả định ban đầu: 10–20 phút tiếp nhận và điều phối mỗi sự cố, chưa tính thời gian sửa chữa. | |
 
@@ -66,23 +68,28 @@ thực hiện công việc.
 
 Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
-- AI Homework Assistant
+- AI Homework Assistant là tên giải pháp, không phải opportunity. Nhu cầu thực tế là phụ huynh gặp khó khăn khi thu thập, tổng hợp và theo dõi bài tập của con từ nhiều nguồn.
 
 ### 2.4. Chấm điểm shortlist (1–5)
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
+| #9 - Xử lý lỗi cài đặt thư viện |5 |4 |3 |4 |5 |4 |4 |29 |
+| #7 - Tìm kiếm, lựa chọn linh kiện điện tử |5 |5 |3 |4 |4 |4 |3 |27 |
+| #12 - Quản lý yêu cầu sửa chữa khách thuê|4 |5 |2 |3 |4 |4 |3 |24 |
 
-**Candidate được chọn:**
+**Candidate được chọn:** #9 - Xử lý lỗi cài đặt thư viện
 
-**Vì sao chọn:**
+**Vì sao chọn:** Candidate #9 đạt 29/35 điểm, cao nhất trong ba vấn đề được đưa vào shortlist. Vấn đề có đối tượng sử dụng rõ ràng, quy trình xử lý cụ thể và có khả năng kiểm chứng trong môi trường lập trình. Nhóm có thể chủ động tái hiện các lỗi phổ biến như thiếu thư viện hoặc xung đột phiên bản, ghi nhận thời gian xử lý, số lần thử và kết quả khắc phục.
+
+Ngoài ra, nhóm có thể so sánh các phương án không dùng AI như checklist, tài liệu hướng dẫn và công cụ quản lý dependency với phương án sử dụng AI để phân tích log và đề xuất cách xử lý. Điều này phù hợp với mục tiêu của bài lab là lựa chọn mức can thiệp công nghệ dựa trên vấn đề thực tế.
 
 **Vì sao loại các candidate còn lại:**
+- #7 – Tìm kiếm và lựa chọn linh kiện điện tử: Vấn đề có tính thực tiễn và quy trình rõ ràng, nhưng việc kiểm tra tính tương thích của linh kiện đòi hỏi kiến thức phần cứng chuyên sâu. Nhóm cần thêm dữ liệu và tiêu chí đánh giá để xác nhận độ chính xác của kết quả.
 
-**Xử lý bất đồng (nếu có):**
+- #12 – Quản lý yêu cầu sửa chữa khách thuê: Bằng chứng định lượng còn hạn chế, thời gian xử lý hiện mới là giả định. Việc thu thập dữ liệu thực tế cũng phụ thuộc vào khả năng tiếp cận người quản lý tòa nhà và khách thuê.
+
+**Xử lý bất đồng (nếu có):** 
 
 ---
 
