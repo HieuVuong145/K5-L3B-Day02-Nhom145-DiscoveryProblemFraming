@@ -21,13 +21,13 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
 | 1 |	Lặp lại |Khi lập thông báo tiền điện, nước hàng tháng, tôi muốn tự động tổng hợp chỉ số công tơ để giảm thời gian tính toán và sai sót. | Chủ nhà, kế toán, khách thuê| 10–30 căn hộ/văn phòng; thực hiện hàng tháng; phải nhập nhiều số liệu thủ công.|
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
-| 6 | | | | |
-| 7 | | | | |
-| 8 | | | | |
+| 2 |	Lặp lại |Khi lập hồ sơ thẩm định giá bất động sản, tôi muốn tự động thu thập và chuẩn hóa dữ liệu tài sản so sánh để nâng cao hiệu suất. |Thẩm định viên, trưởng phòng |Mỗi hồ sơ phải tìm kiếm, kiểm tra và so sánh nhiều bất động sản. |
+| 3 | Tốn thời gian|Khi kiểm tra bản vẽ thiết kế MEP, tôi muốn tự động phát hiện các điểm thiếu hoặc xung đột để hạn chế sai sót khi thi công. |Kỹ sư thiết kế, nhà thầu, chủ đầu tư | Phải kiểm tra nhiều bản vẽ, nhiều hệ thống và phối hợp giữa các bộ môn.|
+| 4 |Pain từ người khác |Khi khách thuê phản ánh sự cố điện, nước hoặc điều hòa, tôi muốn có hệ thống tiếp nhận và phân loại yêu cầu để xử lý nhanh chóng. |Khách thuê, ban quản lý, kỹ thuật viên |Nhiều kênh tiếp nhận như điện thoại, Zalo; thông tin dễ thất lạc, khó theo dõi. |
+| 5 |Lặp lại |Khi giáo viên giao bài tập qua nhiều kênh, tôi muốn tổng hợp tất cả bài tập vào một danh sách để không bỏ sót nhiệm vụ của con. | Phụ huynh, học sinh|Phải kiểm tra LMS, nhóm Zalo, vở ghi và thông báo giáo viên hàng ngày. |
+| 6 |Tốn thời gian |Khi muốn biết tình hình học tập của con, tôi muốn xem nhanh tiến độ hoàn thành bài tập trên LMS để không phải đăng nhập và kiểm tra từng môn. |Phụ huynh | Phải truy cập nhiều môn học, kiểm tra trạng thái từng bài.|
+| 7 |Pain từ người khác |Khi con chưa hoàn thành bài tập nhưng không chủ động báo cáo, tôi muốn biết tình trạng thực tế để hỗ trợ thay vì phải liên tục hỏi và kiểm tra. |Phụ huynh, học sinh | Phụ huynh phải nhắc nhiều lần; dễ phát sinh mâu thuẫn.|
+| 8 |Tốn thời gian | Khi có nhiều con học các lớp khác nhau, tôi muốn theo dõi nhiệm vụ của từng con trên một giao diện chung để tiết kiệm thời gian quản lý.| Phụ huynh, các con|Phải theo dõi nhiều tài khoản, lớp học và lịch học. |
 
 **Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
 
