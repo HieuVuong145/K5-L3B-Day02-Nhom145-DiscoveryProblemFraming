@@ -92,6 +92,7 @@ Quy trình mong muốn
        Nhắc nhở + Báo cáo hàng ngày
 ```
 
+
 ### Problem Card #2 - Tự động lập thông báo tiền điện, nước
 
 | Trường | Nội dung |
@@ -139,6 +140,7 @@ Quy trình mong muốn
                     ↓
              Gửi khách thuê
 ```
+
 
 ### Problem Card #3 - – Quản lý yêu cầu sửa chữa của khách thuê
 
