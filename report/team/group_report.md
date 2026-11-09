@@ -297,30 +297,37 @@ Biện pháp kiểm soát:
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** | |
-| **AI intervention point** | |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Actor** |Lập trình  |
+| **Quy trình** |Khi phát sinh lỗi cài đặt thư viện, lập trình viên tiếp nhận thông báo lỗi, kiểm tra môi trường Python, tra cứu nguyên nhân, đối chiếu dependency, lựa chọn phương án khắc phục, thực hiện và kiểm tra lại chương trình. |
+| **Bottleneck** |Công đoạn thử phương án khắc phục và kiểm tra lại có thể kéo dài do thiếu thông tin chẩn đoán, phải đối chiếu nhiều dependency và thử nhiều phương án |
+| **Impact** |Làm gián đoạn quá trình phát triển phần mềm, kéo dài thời gian xử lý sự cố, tăng công sức thử sai và có nguy cơ gây xung đột dependency mới. |
+| **Success Metric** (baseline → target, cách đo) |Baseline tham chiếu: 61 phút/lỗi, bottleneck 30 phút/lỗi . Target pilot: thời gian xử lý ≤ 40 phút/lỗi, bottleneck ≤ 15 phút/lỗi, không phát sinh lỗi mới do phương án đề xuất. Đo thời gian thực tế trên cùng tập lỗi, so sánh phương án thủ công, Rule và Workflow có AI. |
+| **Boundary** |AI chỉ thu thập thông tin được cho phép, phân tích log và đề xuất phương án. Không tự động chạy lệnh, cài/gỡ package, thay đổi phiên bản Python, chỉnh sửa file cấu hình hoặc dependency. Lập trình viên phải kiểm tra và phê duyệt trước khi thực hiện. |
+| **AI intervention point** |Sau bước thu thập log và kiểm tra lỗi bằng Rule, AI phân tích các thông tin chưa được giải quyết, giải thích nguyên nhân có khả năng xảy ra và đề xuất phương án kèm bước kiểm tra. |
+| **Mức chọn** |Workflow kết hợp AI hỗ trợ chẩn đoán và Human-in-the-Loop. |
+| **Rủi ro & người kiểm tra** |Rủi ro gồm chẩn đoán sai nguyên nhân, đề xuất phiên bản không tương thích, lộ thông tin nhạy cảm trong log và phát sinh lỗi mới khi thay đổi môi trường. Lập trình viên chịu trách nhiệm kiểm tra đề xuất, thực hiện thay đổi và xác nhận kết quả. |
 
 **Thay đổi so với v0 và lý do:**
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
+|Bottleneck |Bước thử và kiểm tra lại mất 30 phút |
+Làm rõ vấn đề thử sai, thiếu thông tin chẩn đoán; 30 phút là số liệu minh họa |Tránh coi thời gian minh họa là bằng chứng thực nghiệm |
+|Success Metric |61 → ≤ 40 phút/lỗi; 30 → ≤ 15 phút tại bottleneck |Giữ mục tiêu nhưng bổ sung so sánh trên cùng tập lỗi và kiểm tra lỗi phát sinh mới |Đánh giá cả hiệu quả và độ an toàn |
+|AI intervention point |Chưa xác định rõ |Sau bước Rule, trước bước lập trình viên quyết định sửa |Xác định chính xác vai trò của AI |
+|Mức chọn |Chưa quyết định |Workflow kết hợp AI |Các bước xử lý có thể định nghĩa trước, chưa cần Agent tự quyết |
+|Rủi ro & người kiểm tra |Chưa có trường riêng |
+Lập trình viên kiểm tra kết quả AI và xác nhận sau khi sửa |Đảm bảo Human-in-the-Loop |
 
 **Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-
+| 1 |Độ chính xác chẩn đoán |Nguyên nhân được xác nhận bằng log, kiểm tra dependency hoặc kết quả tái hiện lỗi |AI đưa ra nguyên nhân không có căn cứ hoặc sai với tình trạng môi trường |
+| 2 |Phương án tương thích |Cách sửa phù hợp với Python, OS và các ràng buộc phiên bản đã cung cấp |Gợi ý phiên bản không tồn tại, không tương thích hoặc bỏ qua dependency quan trọng |
+| 3 |An toàn khi xử lý |AI giải thích rủi ro, không tự chạy lệnh và yêu cầu phê duyệt khi cần thay đổi |AI tự thực thi hoặc đề xuất thao tác nguy hiểm mà không cảnh báo |
+| 4 |Khả năng kiểm chứng |Có hướng dẫn kiểm tra kết quả sau sửa, giúp người dùng xác nhận lỗi đã được khắc phục |Chỉ đưa lệnh sửa mà không có cách xác nhận kết quả |
+| 5 |Hiệu quả thời gian |Đạt mục tiêu ≤ 40 phút/lỗi trên tập thử nghiệm được xác định, đồng thời không làm tăng lỗi mới |Thời gian vượt mục tiêu hoặc giảm thời gian nhưng gây lỗi phát sinh |
 ---
 
 ## 8. Quyết định (CP6)
