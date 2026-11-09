@@ -92,23 +92,24 @@ Quy trình mong muốn
        Nhắc nhở + Báo cáo hàng ngày
 ```
 
-
 ### Problem Card #2 - Tự động lập thông báo tiền điện, nước
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi đến kỳ thanh toán tiền điện, nước cho các căn hộ và văn phòng cho thuê, tôi muốn tự động thu thập, tổng hợp và tính toán chỉ số tiêu thụ để lập thông báo thanh toán chính xác, nhanh chóng và giảm công việc thủ công.|
-| Actor |Chủ nhà, người quản lý tòa nhà, kế toán và khách thuê. |
-| Thời điểm / bối cảnh |Định kỳ hàng tháng, khi chốt chỉ số công tơ và lập thông báo thanh toán cho khách thuê. |
-| Quy trình hiện tại (3–7 bước) |1. Chụp ảnh công tơ nước và công tơ điện, Truy xuất dữ liệu điện từ phần mềm giám sát. 2. Nhập chỉ số điện, nước vào Excel. 3. Đối chiếu chỉ số với kỳ trước. 4. Tính sản lượng và chi phí. 5. Nhập dữ liệu vào mẫu thông báo thanh toán. 6. Xuất và gửi thông báo cho khách thuê. |
-| Bottleneck (bước nào, mất bao nhiêu phút) |Bước 2–3: nhập liệu và đối chiếu nhiều nguồn. Bước 4–5: tính toán, kiểm tra và nhập lại dữ liệu. Giả định ban đầu: 5–10 phút/đơn vị thuê, chưa tính xử lý sai lệch. |
-| Impact (nếu không giải thì sao) |Tốn thời gian, nhầm chỉ số, sai số tiền thanh toán, khiếu nại từ khách thuê và khó truy xuất lịch sử. |
-| Success metric (baseline → target) |Baseline giả định: 5–10 phút/đơn vị. Target: giảm ít nhất 70% thời gian lập thông báo; độ chính xác tính toán đạt 100% trên bộ dữ liệu đã xác nhận; giảm tối đa nhập liệu trùng lặp. |
-| Phương án không dùng AI |Excel có công thức tự động, biểu mẫu nhập liệu thống nhất, Power Query để tổng hợp dữ liệu. |
-| Giả thuyết về AI (nếu có) |OCR đọc chỉ số công tơ từ ảnh; Agent thu thập dữ liệu từ Excel/phần mềm điều hòa, đối chiếu kỳ trước, phát hiện bất thường và tự động tạo thông báo theo mẫu. |
+| Job Story | Khi đến kỳ thanh toán tiền điện, nước cho các căn hộ và văn phòng cho thuê, tôi muốn tự động thu thập, tổng hợp và tính toán chỉ số tiêu thụ để lập thông báo thanh toán chính xác, nhanh chóng và giảm công việc thủ công. |
+| Actor | Chủ nhà, người quản lý tòa nhà, kế toán và khách thuê. |
+| Thời điểm / bối cảnh | Định kỳ hàng tháng, khi chốt chỉ số công tơ và lập thông báo thanh toán cho khách thuê. |
+| Quy trình hiện tại (3–7 bước) | 1. Chụp ảnh công tơ nước và công tơ điện. 2. Truy xuất dữ liệu điện từ phần mềm giám sát. 3. Nhập chỉ số điện, nước vào Excel. 4. Đối chiếu chỉ số với kỳ trước. 5. Tính sản lượng và chi phí. 6. Nhập dữ liệu vào mẫu thông báo thanh toán. 7. Xuất và gửi thông báo cho khách thuê. |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 2–4: nhập liệu và đối chiếu nhiều nguồn. Bước 5–6: tính toán, kiểm tra và nhập lại dữ liệu. Giả định ban đầu: 5–10 phút/đơn vị thuê, chưa tính xử lý sai lệch. |
+| Impact (nếu không giải thì sao) | Tốn thời gian, nhầm chỉ số, sai số tiền thanh toán, khiếu nại từ khách thuê và khó truy xuất lịch sử. |
+| Success metric (baseline → target) | Baseline giả định: 5–10 phút/đơn vị. Target: giảm ít nhất 70% thời gian lập thông báo; độ chính xác tính toán đạt 100% trên bộ dữ liệu đã xác nhận; giảm tối đa nhập liệu trùng lặp. |
+| Phương án không dùng AI | Excel có công thức tự động, biểu mẫu nhập liệu thống nhất, Power Query để tổng hợp dữ liệu. |
+| Giả thuyết về AI (nếu có) | OCR đọc chỉ số công tơ từ ảnh; Agent thu thập dữ liệu từ Excel/phần mềm điều hòa, đối chiếu kỳ trước, phát hiện bất thường và tự động tạo thông báo theo mẫu. |
 | Cảm nhận nhanh | Workflow + Agent. OCR và AI xử lý dữ liệu đầu vào; công thức tính tiền phải được kiểm soát bằng quy tắc xác định. |
 
-Quy trình nháp hiện tại:
+**Quy trình nháp hiện tại:**
+
+```text
 Đến kỳ chốt tiền hàng tháng
           ↓
 Chụp ảnh công tơ điện, nước
@@ -122,9 +123,12 @@ Nhập và tổng hợp Excel
 Tính toán tiền điện, nước
           ↓
 Lập thông báo và gửi khách thuê
+```
 
-Quy trình mong muốn
-    Ảnh công tơ + File Excel + Dữ liệu điều hòa
+**Quy trình mong muốn:**
+
+```text
+Ảnh công tơ + File Excel + Dữ liệu điều hòa
                     ↓
               AI thu thập dữ liệu
                     ↓
@@ -138,9 +142,8 @@ Quy trình mong muốn
                     ↓
           Tạo thông báo tự động
                     ↓
-             Gửi khách thuê
+              Gửi khách thuê
 ```
-
 
 ### Problem Card #3 - – Quản lý yêu cầu sửa chữa của khách thuê
 
