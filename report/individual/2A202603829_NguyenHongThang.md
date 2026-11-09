@@ -20,7 +20,7 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | | | | |
+| 1 |	Lặp lại |Khi lập thông báo tiền điện, nước hàng tháng, tôi muốn tự động tổng hợp chỉ số công tơ để giảm thời gian tính toán và sai sót. | Chủ nhà, kế toán, khách thuê| 10–30 căn hộ/văn phòng; thực hiện hàng tháng; phải nhập nhiều số liệu thủ công.|
 | 2 | | | | |
 | 3 | | | | |
 | 4 | | | | |
