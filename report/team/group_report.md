@@ -39,6 +39,7 @@
 | B. Tra cứu, so sánh và đối chiếu thông tin |#3 – Đối chiếu việc làm với kỹ năng; #7 – So sánh linh kiện điện tử |Người dùng phải tìm kiếm và đối chiếu nhiều nguồn thông tin có cách trình bày khác nhau để đưa ra lựa chọn phù hợp. Việc so sánh thủ công mất thời gian và có thể dẫn đến quyết định sai. |
 | C. Giám sát, phát hiện và xử lý vấn đề |#1 – Phân loại cảnh báo mạng; #9 – Khắc phục lỗi cài đặt thư viện; #12 – Quản lý yêu cầu sửa chữa khách thuê |Người dùng gặp khó khăn trong việc nhận diện vấn đề, xác định nguyên nhân hoặc mức độ ưu tiên và theo dõi quá trình xử lý. Có nguy cơ bỏ sót vấn đề hoặc xử lý chậm.|
 | D. Tối ưu quy trình và thời gian thực hiện công việc |#2 – Chuyển báo cáo thành slide; #11 – Lập thông báo tiền điện, nước|Người dùng phải thực hiện nhiều công đoạn thủ công, lặp lại để hoàn thành một công việc có đầu ra tương đối chuẩn hóa. Việc này tiêu tốn thời gian và dễ phát sinh sai sót.|
+| E. Tìm kiếm và điều hướng theo tình huống thực tế |#4 – Tránh ùn tắc giao thông; #6 – Điều hướng quy trình khám bệnh|Người dùng thiếu thông tin kịp thời về tình trạng thực tế và phương án di chuyển hoặc thứ tự thực hiện phù hợp, dẫn đến thời gian chờ đợi và di chuyển không cần thiết.|
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
