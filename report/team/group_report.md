@@ -7,7 +7,7 @@
 
 - Tên nhóm: Nhóm 145
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
+- Candidate problem được chọn (1 câu): Khi gặp lỗi trong quá trình cài đặt thư viện lập trình, tôi muốn kiểm tra nguyên nhân và cách khắc phục theo một quy trình thống nhất, để không phải xử lý lại từ đầu.
 - Quyết định cuối: Go / Not Yet / No-Go
 
 ---
@@ -24,11 +24,11 @@
 | 4 |Vương Toàn Minh Hiếu |Khi di chuyển qua các trục đường vào giờ cao điểm, tôi muốn biết trước ngã tư hoặc đoạn đường nào đng xảy ra ùn tắc, để chủ động rẽ sang cung đường khác tránh kẹt cứng. |Người tham gia giao thông |Bước 3,4 vì đi vào đường tắc đã mất thời gian và mất thêm thời gian tự tìm đường |Trường: gmaps đã có giải pháp, các vấn đề thực tế gmaps không update được? |
 | 5 |Vương Toàn Minh Hiếu |Khi kết thúc một ngày làm việc hoặc học tập, tôi muốn tổng kết các việc đã hoàn thành, vướng mắc gặp phải cùng những kiến thức vừa tiếp thu được các nhiều nguồn, để viết xong báo cáo Daily Standup nhanh chóng mà không bỏ sót kết quả quan trọng. |Sinh viên CNTT, dev |Lục lại lịch sử mất thời gian và phải viết các nội dung thành các mục chi tiết và hợp lý |Thắng: đối tượng rộng, cần giới hạn |
 | 6 |Vương Toàn Minh Hiếu |Khi tôi đi khám bệnh định kỳ, tôi muốn nắm rõ quy trình di chuyển giữa các phòng khám, xét nghiệm và thứ tự chờ đến lượt ở từng khâu, để tôi có thể đi khám với chi phí thời gian tối thiểu. |Người bệnh đi khám |Thời gian di chuyển qua các phòng, toà nhà và thời gian xếp hàng rất lâu |Hùng: giống hệ thống tra cứu, chưa rõ ứng dụng AI |
-| 7 |Nguyễn Đình Trường |Khi cần tìm một linh kiện điện tử phù hợp với yêu cầu kỹ thuật, tôi muốn so sánh được thông số và khả năng tương thích của nhiều linh kiện, để tránh chọn sai linh kiện và phải thay thế. |Kỹ sư thiết kế phần cứng |Công đoạn đọc datasheet, trích xuất thông số và đối chiếu khả năng tương thích mất khoảng 35–55 phút. Tổng quy trình tìm kiếm và lựa chọn một linh kiện mất khoảng 60–95 phút. | |
+| 7 |Nguyễn Đình Trường |Khi cần tìm một linh kiện điện tử phù hợp với yêu cầu kỹ thuật, tôi muốn so sánh được thông số và khả năng tương thích của nhiều linh kiện, để tránh chọn sai linh kiện và phải thay thế. |Kỹ sư thiết kế phần cứng |Công đoạn đọc datasheet, trích xuất thông số và đối chiếu khả năng tương thích mất khoảng 35–55 phút. Tổng quy trình tìm kiếm và lựa chọn một linh kiện mất khoảng 60–95 phút. | AI sẽ được thể hiện như nào tại chưa thấy rõ vai trò của AI trong problem? (Hiếu) |
 | 8 |Nguyễn Đình Trường |	Khi cần viết tài liệu kỹ thuật từ ghi chú hoặc kết quả công việc, tôi muốn trình bày thông tin theo một cấu trúc thống nhất, để giảm công sức biên soạn và hạn chế sai lệch. |Người viết tài liệu kỹ thuật |Bước 3 và 4: Phân loại thông tin và biên soạn tài liệu. Thông tin đầu vào nằm ở nhiều nguồn, không đồng nhất về cách diễn đạt và mức độ chi tiết. Người viết phải tự xác định nội dung nào thuộc mục nào, chuyển ghi chú thành câu văn kỹ thuật và đảm bảo không làm sai lệch ý nghĩa ban đầu. Đây là hai công đoạn có khả năng tiêu tốn nhiều thời gian nhất. | |
 | 9 |Nguyễn Đình Trường |Khi gặp lỗi trong quá trình cài đặt thư viện lập trình, tôi muốn kiểm tra nguyên nhân và cách khắc phục theo một quy trình thống nhất, để không phải xử lý lại từ đầu. |	Lập trình viên |Bước 5 và bước 6: Thử phương án khắc phục và kiểm tra lại, mất khoảng 30 phút (chiếm 49,2% tổng thời gian 61 phút). | |
 | 10 |Nguyễn Hồng Thắng |AI Homework Assistant |Phụ huynh (người sử dụng chính); học sinh (người thực hiện); giáo viên (người giao bài). |Bước 2–4: phải chuyển đổi giữa nhiều nguồn và tổng hợp thủ công. Bước 5–6: khó xác minh tình trạng thực tế. Giả định ban đầu: 20–40 phút/ngày. |Hùng: Vẫn có phần lớn bài tập được giao qua bài vở, xử lý kiểu gì? Việc tổng hợp từ nhiều nguồn thì kết nối với Zalo, website trường học và Google Classroom bằng cách nào? Các nền tảng này có hỗ trợ API và cấp quyền truy cập phù hợp hay không?|
-| 11 |Nguyễn Hồng Thắng |Tự động lập thông báo tiền điện, nước |Chủ nhà, người quản lý tòa nhà, kế toán và khách thuê. |Bước 2–4: nhập liệu và đối chiếu nhiều nguồn. Bước 5–6: tính toán, kiểm tra và nhập lại dữ liệu. Giả định ban đầu: 5–10 phút/đơn vị thuê, chưa tính xử lý sai lệch. | |
+| 11 |Nguyễn Hồng Thắng |Tự động lập thông báo tiền điện, nước |Chủ nhà, người quản lý tòa nhà, kế toán và khách thuê. |Bước 2–4: nhập liệu và đối chiếu nhiều nguồn. Bước 5–6: tính toán, kiểm tra và nhập lại dữ liệu. Giả định ban đầu: 5–10 phút/đơn vị thuê, chưa tính xử lý sai lệch. | Vai trò của AI là gì khi những công việc này hoàn toàn có thể dựa vào 1 thuật toán định sẵn để tính? (Hiếu) |
 | 12 |Nguyễn Hồng Thắng |Quản lý yêu cầu sửa chữa của khách thuê |Khách thuê (người phản ánh); người quản lý tòa nhà (người tiếp nhận và điều phối); kỹ thuật viên (người xử lý); chủ nhà (người giám sát). |Bước 1–3: thông tin không đầy đủ, phải hỏi lại nhiều lần. Bước 4–5: mất thời gian tìm người xử lý và theo dõi. Giả định ban đầu: 10–20 phút tiếp nhận và điều phối mỗi sự cố, chưa tính thời gian sửa chữa. | |
 
 ### 2.2. Cluster
@@ -97,47 +97,54 @@ Ngoài ra, nhóm có thể so sánh các phương án không dùng AI như check
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 1 | Lập trình viên thường xuyên mất từ 30–60 phút cho mỗi sự cố lỗi xung đột thư viện/môi trường và cảm thấy đây là công việc gây ức chế, gián đoạn mạch làm việc. | Value | 5 | 3 | Có |
+| 2 | Phần lớn thời gian bị lãng phí là ở khâu tra cứu phân tán và thử-sai (trial and error) các lệnh sửa ngẫu nhiên trên terminal, chứ không phải ở bước đọc thông báo lỗi. | Value | 5 | 2 | Có |
+| 3 | Log lỗi terminal (stack trace, pip dependency conflict) kết hợp thông tin môi trường (`python -V`, `pip list`, OS) chứa đủ ngữ cảnh để AI chẩn đoán chính xác nguyên nhân gốc rễ mà không cần đọc toàn bộ mã nguồn dự án. | Feasibility | 4 | 3 | — |
+| 4 | Lập trình viên không tin tưởng để AI tự động thực thi lệnh chạy ngầm (blind execution) vì sợ làm hỏng luôn virtual environment; họ muốn thấy lệnh gợi ý kèm giải thích rõ ràng trước khi xác nhận chạy. | Usability | 5 | 2 | Có |
+| 5 | Chi phí gọi API/AI chẩn đoán lỗi terminal nằm trong mức chấp nhận được đối với lập trình viên cá nhân hoặc nhóm nhỏ (dưới 10.000 VNĐ/tháng nếu dùng các mô hình nhỏ/nhẹ). | Viability | 3 | 3 | — |
 
-*Điền 4–6 giả định; xóa dòng thừa.*
-
-Giả định nhóm kiểm chứng trong buổi này:
+Giả định nhóm kiểm chứng trong buổi này: Giả định #1, #2 và #4.
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+Cách đã dùng: Phỏng vấn, Log, ticket
 
 Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Người được hỏi (vai trò, không ghi tên thật) | Backend Developer (1.5 năm kinh nghiệm làm việc với Python/FastAPI) |
+| Câu nói đáng nhớ nhất (nguyên văn) | *"Có hôm cài thêm package mới để làm xuất báo cáo Excel, nó báo lỗi xung đột phiên bản `pydantic` với thư viện cũ, mình ngồi gõ `pip install --upgrade` loạn xạ mất gần 2 tiếng, cuối cùng hỏng luôn virtualenv đành phải xóa đi tạo lại từ đầu."* |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | 3 ngày trước khi cài thư viện xử lý ảnh OpenCV trên máy Mac Apple Silicon, bị lỗi C++ wheel build fail. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Copy đoạn log dài trên Terminal dán lên Google / ChatGPT, thử từng lệnh gợi ý; nếu vỡ môi trường thì đành xóa hẳn folder `.venv` và cài lại từ đầu. |
+| Mất bao lâu, bao lần? | 45–60 phút mỗi lần gặp lỗi lạ; tần suất khoảng 2–3 lần/tháng. |
+| Insight / opportunity rút ra | Nỗi sợ lớn nhất không phải là không tìm ra cách sửa, mà là việc thử các phương án sửa không được kiểm soát làm "nát" môi trường (dependency hell). Lập trình viên rất cần một lộ trình chẩn đoán có giải thích và cơ chế thử nghiệm an toàn (dry-run/backup). |
+
+**Interview snapshot #2:**
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) | Sinh viên năm 4 ngành CNTT / Data Science |
+| Câu nói đáng nhớ nhất (nguyên văn) | *"Mỗi lần clone repo đồ án của thầy hoặc nhóm khác về mà chạy `pip install -r requirements.txt` bị lỗi C++ build tools hay mismatch version Python là em toát mồ hôi, ngồi tra StackOverflow cả buổi chiều."* |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Tuần trước khi thiết lập môi trường chạy mô hình PyTorch kết hợp CUDA cho môn học Deep Learning. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Chụp màn hình hỏi bạn bè hoặc xóa bớt các dòng trong file requirements rồi cài tay từng package một để xem gói nào bị lỗi. |
+| Mất bao lâu, bao lần? | Khoảng 60–90 phút; xảy ra mỗi khi bắt đầu môn học mới, clone dự án mới hoặc chuyển môi trường máy tính. |
+| Insight / opportunity rút ra | Lỗi môi trường xảy ra nặng nhất khi liên quan đến OS-specific libraries (C++ compiler, binary wheels, phiên bản Python). Cần phân biệt rõ lỗi cú pháp mã nguồn vs lỗi môi trường hệ thống. |
 
 Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| | | | |
-
+| Phỏng vấn sâu (The Mom Test) + Khảo sát nhanh | 3 người phỏng vấn sâu + 8 người khảo sát nhanh trong lớp | 10/11 người xác nhận từng mất từ 45–90 phút chỉ để giải quyết lỗi thư viện/môi trường; 9/11 người đồng ý rằng bước "thử các lệnh sửa trên terminal" là bước tốn thời gian và rủi ro nhất. | 1 lập trình viên kinh nghiệm chia sẻ: *"Nếu dự án dùng Docker chuẩn hoặc uv lock file thì hiếm khi gặp lỗi, chỉ những ai quản lý môi trường thủ công bằng pip không ghim version mới hay bị."* |
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
 
 ### 3.3. Research giải pháp đã có
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| **Astral uv** (Python package & project manager) | `https://docs.astral.sh/uv/` | Bước 4 (Đối chiếu phiên bản) và Bước 5 (Thử phương án khắc phục) | Cực nhanh (viết bằng Rust), tích hợp thuật toán giải quyết xung đột (PubGrub resolver), tự động tạo lockfile đảm bảo môi trường tái lập. | Là công cụ dòng lệnh thuần túy (Rule-based), không giải thích nguyên nhân bằng ngôn ngữ tự nhiên đối với các lỗi build C/C++, compiler OS (thiếu wheel, thiếu gcc). Người mới vẫn bối rối khi đọc log xung đột dài. | Cần tận dụng tư duy phân tích cây phụ thuộc chuẩn xác, kết hợp AI để giải thích nguyên nhân gốc rễ và đề xuất cách xử lý phù hợp cho người dùng. |
+| **GitHub Copilot in the CLI** | `https://docs.github.com/en/copilot/github-copilot-in-the-cli` | Bước 2 (Đọc và xác định lỗi) và Bước 3 (Tìm kiếm nguyên nhân, gợi ý lệnh sửa) | Giải thích câu lệnh và gợi ý lệnh sửa ngay trên Terminal thông qua giao diện dòng lệnh, không cần chuyển ngữ cảnh sang trình duyệt. | Hay đưa ra gợi ý chung chung mang tính chất "thử xem sao" (như `pip install --force-reinstall`), không kiểm tra trạng thái tương thích toàn bộ môi trường ảo hiện tại, dễ gây "ảo giác" (hallucination) tạo lệnh không tương thích với OS/Python version. | AI cần nhận được input ngữ cảnh đầy đủ (Python version, OS, pip list/virtualenv info) thay vì chỉ đọc mỗi vài dòng log cuối của Terminal. |
+| **pip-tools** (`pip-compile` & `pip-sync`) | `https://github.com/jazzband/pip-tools` | Quản lý phiên bản và đồng bộ môi trường (No AI / Rule) | Khóa chính xác cây phụ thuộc, đảm bảo tính đồng nhất giữa môi trường dev và production. | Không có cơ chế tự giải thích hoặc gợi ý giải pháp khi xảy ra mâu thuẫn giữa 2 thư viện cấp 1 đòi 2 phiên bản khác nhau của thư viện cấp 2. | Rule-based quản lý lockfile là nền tảng an toàn, AI đóng vai trò tư vấn khi có xung đột logic hoặc thiếu dependencies hệ thống. |
 
 ---
 
