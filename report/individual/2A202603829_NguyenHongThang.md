@@ -41,9 +41,9 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 |Tổng hợp bài tập học sinh từ nhiều kênh (LMS, Zalo, vở ghi, thông báo giáo viên). | Vấn đề xảy ra hàng ngày, thông tin phân tán, phụ huynh phải kiểm tra và tổng hợp thủ công. Có khả năng ứng dụng AI để đọc, nhận diện, phân loại và quản lý nhiệm vụ tập trung.|Khả năng truy cập dữ liệu LMS; mức độ đa dạng của các kênh giao bài; độ chính xác khi AI nhận diện nội dung và deadline. |
+| 2 |Tự động tổng hợp chỉ số điện, nước và lập thông báo thanh toán. |Công việc lặp lại hàng tháng, có quy trình rõ ràng, nhiều dữ liệu đầu vào và đầu ra có thể kiểm chứng. Có tiềm năng ứng dụng OCR và AI Agent để tự động hóa toàn bộ quy trình. | Độ chính xác khi đọc ảnh công tơ; khả năng lấy dữ liệu điện điều hòa; mức độ khác biệt giữa các biểu mẫu thanh toán.|
+| 3 |Tiếp nhận và phân loại yêu cầu sửa chữa của khách thuê. |Thông tin đến từ nhiều kênh, ảnh hưởng trực tiếp đến trải nghiệm khách thuê và hiệu quả vận hành. AI có thể phân loại sự cố, xác định mức độ ưu tiên và điều phối kỹ thuật viên. |Số lượng sự cố thực tế mỗi tháng; thời gian xử lý hiện tại; khả năng tích hợp các kênh liên lạc. |
 
 ### Problem Card #1
 
