@@ -55,7 +55,8 @@ Lý do: Trong quá trình xây dựng tài liệu CANVista, thông tin nằm ở
 | Quy trình hiện tại (3–7 bước) |	1. Xác định yêu cầu kỹ thuật. 2. Tìm kiếm linh kiện trên các trang nhà sản xuất và nhà cung cấp. 3. Tải datasheet 4. Đọc và trích xuất thông số 5. So sánh thông số giữa các linh kiện 6. Kiểm tra khả năng tương thích với mạch điện 7. Lựa chọn linh kiện phù hợp. |
 | Bottleneck (bước nào, mất bao nhiêu phút) |Công đoạn đọc datasheet, trích xuất thông số và đối chiếu khả năng tương thích mất khoảng 35–55 phút. Tổng quy trình tìm kiếm và lựa chọn một linh kiện mất khoảng 60–95 phút.|
 | Impact (nếu không giải thì sao) |Tốn thời gian nghiên cứu, có nguy cơ chọn sai thông số, phát sinh chi phí mua linh kiện thay thế và chỉnh sửa thiết kế.|
-| Success metric (baseline → target) | |
+| Success metric (baseline → target) |Baseline: Khoảng 60-95 phút/lần lựa chọn (theo trải nghiệm đã cung cấp).
+Target: Giảm ít nhất 30% thời gian tìm kiếm và so sánh; đảm bảo các thông số quan trọng được kiểm chứng bằng datasheet. |
 | Phương án không dùng AI |Tạo benchmark so sánh thông số, đánh giá độ phù hợp của từng liên kiện đối với yêu cầu sản phầm|
 | Giả thuyết về AI (nếu có) |AI sẽ tìm linh kiện, đọc datasheet của linh kiện, tổng hợp thông số, lọc các linh kiện không đáp ứng và có thể recommend được nên dùng linh kiện chuẩn cho trường hợp cố định |
 | Cảm nhận nhanh | Workflow |
@@ -104,8 +105,8 @@ HIỆN TẠI - 115 phút
 | Bottleneck (bước nào, mất bao nhiêu phút) |Bước 5 và bước 6: Thử phương án khắc phục và kiểm tra lại, mất khoảng 30 phút (chiếm 49,2% tổng thời gian 61 phút).|
 | Impact (nếu không giải thì sao) |- Gián đoạn tiến độ lập trình do môi trường không hoạt động, mất thời gian tra cứu và thử nghiệm nhiều phương án, có nguy cơ làm phát sinh lỗi mới khi thay đổi phiên bản thư viện, khó tái sử dụng cách khắc phục nếu không ghi lại nguyên nhân và giải pháp |
 | Success metric (baseline → target) |Baseline: Khoảng 61 phút xử lý một tình huống lỗi (ước tính minh họa), target: Giảm ít nhất 30% thời gian xử lý, tương đương còn khoảng 43 phút hoặc ít hơn, theo dõi thêm tỷ lệ khắc phục thành công và số lần phải thử lại. |
-| Phương án không dùng AI | |
-| Giả thuyết về AI (nếu có) | |
+| Phương án không dùng AI |Sử dụng venv, quản lý package bằng requirements.txt, xây dựng checklist kiểm tra phiên bản, lưu lại lỗi thường gặp và cách khắc phục, sử dụng Git để quản lý cấu hình. |
+| Giả thuyết về AI (nếu có) |AI có thể đọc log Terminal, phân tích phiên bản Python và package, xác định nguyên nhân có khả năng gây lỗi, đề xuất lệnh cài đặt hoặc điều chỉnh phiên bản và hướng dẫn kiểm tra lại. Người dùng xác nhận trước khi thực thi. |
 | Cảm nhận nhanh |Workflow|
 
 Quy trình nháp hiện tại:
