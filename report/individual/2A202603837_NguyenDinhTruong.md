@@ -138,13 +138,13 @@ HIỆN TẠI - 115 phút
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
+| Pitch Problem Card |Pitch Xử lý lỗi cài đặt thư viện | Vào shortlist và được chọn |
 | Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
 | Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
 | Gom cluster / cây OST | | |
 | Chọn candidate problem | | |
 | Kiểm chứng / research | | |
-| Quy trình nhóm | | |
+| Quy trình nhóm |Phân tích quy trình As-Is, xác định bottleneck tại bước thử phương án khắc phục và kiểm tra lại. Đề xuất quy trình To-Be kết hợp Rule, AI và con người. |Làm rõ công đoạn tốn nhiều thời gian nhất (30/61 phút), xác định vai trò của AI trong phân tích lỗi và đề xuất cách khắc phục, đồng thời giữ quyền kiểm soát cho lập trình viên. |
 | Problem Statement | | |
 | Mức can thiệp AI | | |
 | Quyết định | | |
@@ -155,12 +155,11 @@ HIỆN TẠI - 115 phút
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan |Gợi ý và phân tích các bài toán thực tế. |Mở rộng ý tưởng, hỗ trợ viết Job Story. |Một số ý tưởng còn chung chung, thiếu bottleneck cụ thể. |Chọn lọc và điều chỉnh theo tính thực tế của vấn đề. |
+| CP2 Problem Card |Hỗ trợ phân nhóm candidate, xây dựng OST và shortlist. |Giúp hệ thống hóa các vấn đề và so sánh giữa các candidate. |Có lúc nhầm opportunity với solution, điểm số chưa có đủ bằng chứng. |Điều chỉnh các nhánh opportunity và lựa chọn #9 dựa trên khả năng kiểm chứng thực tế. |
+| CP5 Quy trình |Chuyển mô tả sang Mermaid|Nhanh |Quy trình đề xuất đôi khi chưa sát thực tế, target còn mang tính giả định. |Bổ sung vòng lặp xử lý lỗi, xác định boundary và phân biệt số liệu thực tế với mục tiêu kỳ vọng. |
+
+
 
 ---
 
@@ -169,19 +168,19 @@ HIỆN TẠI - 115 phút
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
-
+Khi nghe các vấn đề của các thành viên khác, tôi nhận ra một vấn đề thực tế không nhất thiết phải có AI mới giải quyết được. Mỗi candidate có đặc điểm và mức độ khả thi khác nhau. Ví dụ, bài toán so sánh linh kiện điện tử có quy trình rõ ràng nhưng đòi hỏi kiến thức chuyên môn; bài toán quản lý yêu cầu sửa chữa có nhiều bên tham gia nhưng cần thêm dữ liệu thực tế. Qua đó, tôi học được cách nhìn nhận vấn đề từ góc độ người dùng, quy trình và khả năng kiểm chứng thay vì chỉ đánh giá mức độ thú vị của ý tưởng.
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
-
+Đối với tôi người trong nhóm, ban đầu đã bị solution-first trước khi hiểu vấn đề và khi trao đổi với các thành viên trong nhóm thì cũng có thấy phần nào mọi người cũng đang có một chút là đang solution trước, sau đó nhóm đã thảo luận và nhận ra rằng là nhóm đang tìm giải pháp cho 1 vấn đề mơ hồ, nhóm đã bắt đầu lại ngay từ bước ban đầu là xác định rõ vấn đề hiểu rõ vấn đề có bắt nguồn từ đâu, actor là ai và như thế nào, từ đó nhóm tổng kết lại và giúp nhau rút kinh nghiệm.
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
-
+Tôi rất đồng ý khi bị phản biện. Cụ thể là về problem card #1 của tôi là về tìm linh kiện điện tử, lúc đầu thì ý tưởng của tôi đã nêu không rõ công việc của AI như thế nào, giải thích khá là lệch so với đúng những gì mà AI nên làm trong dự án của tôi. Từ đó nhận ra rằng cần có phản biện để được phát triển hơn cũng như có góc nhìn khác về dự án không chỉ dự án này mà các dự án sau này nữa.
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
-
+Điều khiến tôi chú ý là không phải mọi lỗi cài đặt thư viện đều cần đến AI. Một số lỗi phổ biến có thể giải quyết bằng checklist hoặc các quy tắc đơn giản. Điều này khiến tôi nhận ra cần xác định đúng phạm vi sử dụng AI, tránh đưa AI vào chỉ vì muốn sản phẩm có tính ứng dụng AI. Tuy nhiên, tôi chưa trực tiếp phụ trách CP4 nên chưa thể đưa ra kết luận từ kết quả phỏng vấn hoặc research của nhóm.
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
-
+Điều khó nhất đối với tôi là phân biệt giữa vấn đề thực tế của người dùng và giải pháp mà nhóm muốn xây dựng. Ban đầu, tôi dễ tập trung vào việc AI có thể phân tích log và đề xuất cách sửa lỗi như thế nào. Tuy nhiên, khi viết Problem Statement, tôi phải quay lại xác định Actor, quy trình, bottleneck và tác động thực tế. Ngoài ra, việc sử dụng số liệu cũng cần cẩn thận vì 61 phút chỉ là kết quả của trường hợp đã khảo sát, chưa thể đại diện cho tất cả lập trình viên.
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
-
+Nếu làm lại, tôi sẽ dành nhiều thời gian hơn để xác minh vấn đề ngay từ CP1 và CP2, thay vì chỉ tập trung hoàn thiện nội dung và chấm điểm candidate. Tôi cũng sẽ yêu cầu làm rõ nguồn gốc của các số liệu trước khi sử dụng chúng làm baseline. Tôi muốn phản biện nhóm mạnh hơn ở hai điểm: liệu bottleneck có thực sự cần AI giải quyết hay chỉ cần Rule, và liệu giải pháp đề xuất có tạo ra cải thiện đủ lớn so với quy trình hiện tại hay không.
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-
+Bài toán nhóm tôi lựa chọn là hỗ trợ lập trình viên xử lý lỗi trong quá trình cài đặt thư viện Python. Quy trình hiện tại gồm đọc lỗi, kiểm tra môi trường, tìm kiếm nguyên nhân, thử cách khắc phục và kiểm tra lại. Bottleneck chính nằm ở bước thử phương án và kiểm tra lại, mất khoảng 30 phút trong tổng thời gian 61 phút của trường hợp đã khảo sát. Nhóm đặt mục tiêu giảm tổng thời gian xử lý xuống không quá 40 phút và thời gian bottleneck xuống không quá 15 phút. AI chỉ được phân tích log và đề xuất phương án, không tự ý chạy lệnh hoặc thay đổi môi trường lập trình. Các lỗi đơn giản có thể xử lý bằng Rule, còn AI hỗ trợ những lỗi phức tạp cần phân tích thêm ngữ cảnh. Lập trình viên vẫn là người kiểm tra, phê duyệt và quyết định thực hiện phương án khắc phục.
 ---
 
 ## 7. Tài liệu tham khảo
