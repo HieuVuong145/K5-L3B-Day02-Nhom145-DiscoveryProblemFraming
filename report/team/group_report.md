@@ -173,6 +173,7 @@ HIỆN TẠI — 6 bước, 61 phút, 6/6 bước thủ công
 | 4 | Lập trình viên|Thông tin lỗi, cấu hình môi trường, kết quả tra cứu |Xác định nguyên nhân và phương án khắc phục phù hợp |13 phút |Đối chiếu phiên bản Python, thư viện và các dependency để tránh xung đột |
 | 5 | Lập trình viên|Phương án khắc phục đã lựa chọn |Thay đổi môi trường hoặc phiên bản thư viện |15 phút |Phải thử cài đặt lại, đổi phiên bản hoặc điều chỉnh môi trường; có thể phát sinh lỗi mới |
 | 6 | Lập trình viên|Môi trường sau khi điều chỉnh, chương trình cần chạy |Kết quả xác nhận cài đặt thành công hoặc lỗi còn tồn tại |15 phút |Chạy lại chương trình và kiểm tra; nếu chưa thành công phải quay lại bước tìm nguyên nhân |
+
 **Bottleneck chính:** Bước 5 và bước 6 là bottleneck chính, chiếm tổng cộng 30 phút (49,2% tổng thời gian 61 phút). Lập trình viên phải tự thử các phương án khắc phục, điều chỉnh môi trường và chạy lại chương trình để xác nhận kết quả. Nếu phương án không phù hợp hoặc phát sinh lỗi mới, quy trình phải lặp lại, khiến thời gian xử lý kéo dài.
 
 ### 4.2. Quy trình tương lai
