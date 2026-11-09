@@ -215,16 +215,16 @@ Quy trình mong muốn
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card |Đưa ra 3 vấn đề: AI Homework Assistant, tự động lập thông báo tiền điện/nước và quản lý yêu cầu sửa chữa của khách thuê. Trình bày actor, bottleneck và quy trình dự kiến của từng vấn đề. |Giúp nhóm có thêm các candidate thuộc lĩnh vực giáo dục và quản lý tòa nhà để so sánh, mở rộng phạm vi lựa chọn. |
+| Phản biện bài của bạn khác | Đặt câu hỏi với candidate phân loại cảnh báo mạng của Hùng vì đã có nhiều giải pháp tương tự. Đặt câu hỏi về khả năng kết nối các nguồn dữ liệu như Zalo, website trường học và Google Classroom đối với AI Homework Assistant.|Giúp làm rõ tính khả thi, mức độ khác biệt và khả năng tiếp cận dữ liệu của các ý tưởng. |
+| Nhận phản biện | Nhận câu hỏi từ Hiếu về vai trò thực sự của AI trong việc lập thông báo tiền điện, nước khi công việc tính toán có thể thực hiện bằng thuật toán cố định.|Nhận ra cần phân biệt rõ phần xử lý theo quy tắc và phần thực sự cần AI, thay vì mặc định đưa AI vào toàn bộ quy trình. |
+| Gom cluster / cây OST |Tham gia phân nhóm các candidate theo 5 cluster: tổng hợp thông tin, tra cứu và đối chiếu, giám sát và xử lý vấn đề, tối ưu quy trình, tìm kiếm và điều hướng. Xây dựng outcome và các opportunity chính. |Giúp nhóm chuyển từ tư duy lựa chọn tính năng sang nhận diện nhu cầu và vấn đề chung của người dùng. |
+| Chọn candidate problem |Tham gia đánh giá shortlist dựa trên actor, quy trình, bằng chứng pain, impact, khả năng thực hiện và khả năng so sánh các mức can thiệp công nghệ. |Nhóm lựa chọn candidate #9 – Xử lý lỗi cài đặt thư viện, đạt 29/35 điểm, cao nhất trong shortlist. |
+| Kiểm chứng / research |Tham gia xây dựng các giả định cần kiểm chứng, nghiên cứu các giải pháp Astral uv, GitHub Copilot CLI và pip-tools; xem xét kết quả phỏng vấn và khảo sát. |Nhóm xác định vấn đề không chỉ nằm ở việc đọc lỗi mà còn ở khâu thử phương án khắc phục, kiểm tra tương thích và nguy cơ làm hỏng môi trường lập trình. |
+| Quy trình nhóm |Tham gia phân tích quy trình xử lý lỗi cài đặt thư viện, từ đọc log, kiểm tra môi trường, tìm nguyên nhân, lựa chọn phương án đến thử nghiệm và xác nhận kết quả. |Làm rõ bottleneck tại bước thử phương án và kiểm tra lại, chiếm 30/61 phút trong trường hợp khảo sát. |
+| Problem Statement |Tham gia xác định actor, quy trình, bottleneck, impact, success metric và boundary cho vấn đề đã chọn. |Problem Statement xác định mục tiêu giảm thời gian xử lý từ 61 phút xuống không quá 40 phút/lỗi; thời gian bottleneck từ 30 phút xuống không quá 15 phút. |
+| Mức can thiệp AI |Phân tích sự khác biệt giữa No AI, Rule, Workflow và Agent; xác định phần AI phân tích log, kiểm tra ngữ cảnh và đề xuất phương án. |Nhóm không giao quyền thực thi lệnh cho AI. Lập trình viên vẫn kiểm tra và phê duyệt trước khi áp dụng. |
+| Quyết định |Tham gia thống nhất hướng giải quyết tập trung vào hỗ trợ chẩn đoán lỗi cài đặt thư viện có xét đến môi trường thực tế. |Nhóm lựa chọn hướng AI hỗ trợ ra quyết định, kết hợp quy tắc và sự kiểm soát của con người thay vì tự động hóa hoàn toàn. |
 
 ---
 
@@ -232,12 +232,16 @@ Quy trình mong muốn
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan |
+
+Hỗ trợ phân tích và hệ thống hóa các vấn đề thực tế có thể ứng dụng AI. |Gợi ý các hướng vấn đề, actor, pain point và cơ hội ứng dụng AI. | | |
+| CP2 Problem Card |Hỗ trợ diễn đạt Job Story, xác định actor, bottleneck và cấu trúc Problem Card. |Giúp trình bày ý tưởng rõ ràng, có cấu trúc và dễ so sánh. | | |
+| CP4 Research |Hỗ trợ phân tích giả định, tìm hiểu các công cụ hiện có và so sánh giải pháp. |Giúp hệ thống hóa ưu điểm, hạn chế của Astral uv, GitHub Copilot CLI và pip-tools. | | |
+| CP5 Quy trình |
+
+Hỗ trợ phân rã quy trình xử lý lỗi thành các bước và xác định bottleneck. |Giúp nhìn rõ các công đoạn đọc log, kiểm tra môi trường, tra cứu, thử phương án và xác nhận kết quả. | | |
+| CP5–6 Problem Statement |Hỗ trợ cấu trúc Actor, Process, Bottleneck, Impact, Success Metric và Boundary. |Giúp kiểm tra tính logic và sự liên kết giữa vấn đề, mục tiêu đo lường và phạm vi giải pháp. | | |
+| CP6 Mức can thiệp / quyết định |Hỗ trợ so sánh các phương án No AI, Rule, Workflow và Agent. |Giúp nhận diện công đoạn nào phù hợp với thuật toán cố định, công đoạn nào cần khả năng phân tích ngữ cảnh của AI. | | |
 
 ---
 
@@ -246,18 +250,29 @@ Quy trình mong muốn
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
-
+Các ý tưởng xuất phát từ nhu cầu thực tế, tập trung ứng dụng AI vào các công việc đòi hỏi nhiều công sức và thời gian thu thập, xử lý thông tin.
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
-
+Có, AI Homework Assistant ban đầu được đặt tên theo hướng giải pháp.
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
-
+Với Candidate tự động lập thông báo tiền điện, nước. Ban đầu tôi nhìn nhận đây là một bài toán có thể ứng dụng AI để tự động hóa.
+Hiếu đặt câu hỏi: vai trò của AI là gì khi các công việc tính toán có thể dựa trên thuật toán định sẵn?
+Sau phản biện, tôi nhận ra không phải công đoạn nào cũng cần AI. Tính toán nên dùng Rule, còn AI chỉ phù hợp khi cần xử lý dữ liệu đầu vào không đồng nhất hoặc hỗ trợ phân tích thông tin.
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
-
+Không, vì bản thân tôi cũng đã từng gặp những tình huống tương tự trong quá trình học lập trình và làm việc với Python. Tôi hiểu cảm giác mất nhiều thời gian để xử lý lỗi cài đặt thư viện, xung đột phiên bản hoặc cấu hình môi trường. Có những lúc phải tìm kiếm trên Google, tham khảo Stack Overflow, hỏi AI rồi thử từng phương án nhưng vẫn chưa giải quyết được vấn đề. Thậm chí, việc thử các lệnh không phù hợp còn có thể khiến môi trường lập trình đang hoạt động bình thường bị lỗi và phải tạo lại từ đầu.
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
-
+Xác định đúng bottleneck thay vì mô tả toàn bộ quy trình như một vấn đề.
+Phân biệt baseline đã đo với target kỳ vọng.
+Viết metric có thể kiểm chứng được.
+Xác định boundary để tránh giao cho AI những quyền có thể gây rủi ro.
+Đảm bảo problem statement mô tả vấn đề của người dùng, không biến thành mô tả tính năng của sản phẩm.
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
-
+Kiểm chứng các giả định sớm hơn, đặc biệt là thời gian thực tế và tần suất xảy ra lỗi.
+Phỏng vấn nhiều đối tượng có trình độ và môi trường lập trình khác nhau.
+Yêu cầu nhóm làm rõ baseline trước khi đưa ra target.
+Phản biện mạnh hơn về việc AI có thực sự tạo ra giá trị vượt trội so với checklist, Rule hoặc công cụ quản lý dependency hiện có.
+Đặc biệt chú ý đến an toàn, quyền thực thi lệnh và cơ chế quay lại khi AI đề xuất sai.
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+Bài nhóm tôi tập trung vào vấn đề lập trình viên mất nhiều thời gian xử lý lỗi cài đặt thư viện và xung đột môi trường Python. Quy trình hiện tại gồm đọc log lỗi, kiểm tra môi trường, tìm kiếm nguyên nhân, lựa chọn phương án khắc phục, thử thực hiện và chạy lại để xác nhận kết quả. Bottleneck chính là bước thử phương án và kiểm tra lại, chiếm khoảng 30 phút trong tổng thời gian 61 phút của trường hợp khảo sát. Metric đặt ra là giảm tổng thời gian xử lý xuống không quá 40 phút/lỗi và giảm thời gian bottleneck xuống không quá 15 phút. Boundary là AI chỉ được phân tích log, kiểm tra thông tin môi trường và đề xuất phương án, không được tự ý thực thi lệnh hoặc thay đổi môi trường lập trình. Vì vậy, nhóm lựa chọn hướng kết hợp Rule và AI: Rule xử lý các trường hợp có quy tắc rõ ràng, AI hỗ trợ phân tích lỗi phức tạp và đề xuất cách khắc phục phù hợp. Lập trình viên vẫn là người kiểm tra, phê duyệt và quyết định thực hiện để đảm bảo an toàn cho môi trường dự án.
 
 ---
 
