@@ -251,26 +251,32 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 Các ý tưởng xuất phát từ nhu cầu thực tế, tập trung ứng dụng AI vào các công việc đòi hỏi nhiều công sức và thời gian thu thập, xử lý thông tin.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
 Có, AI Homework Assistant ban đầu được đặt tên theo hướng giải pháp.
+
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 Với Candidate tự động lập thông báo tiền điện, nước. Ban đầu tôi nhìn nhận đây là một bài toán có thể ứng dụng AI để tự động hóa.
 Hiếu đặt câu hỏi: vai trò của AI là gì khi các công việc tính toán có thể dựa trên thuật toán định sẵn?
 Sau phản biện, tôi nhận ra không phải công đoạn nào cũng cần AI. Tính toán nên dùng Rule, còn AI chỉ phù hợp khi cần xử lý dữ liệu đầu vào không đồng nhất hoặc hỗ trợ phân tích thông tin.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 Không, vì bản thân tôi cũng đã từng gặp những tình huống tương tự trong quá trình học lập trình và làm việc với Python. Tôi hiểu cảm giác mất nhiều thời gian để xử lý lỗi cài đặt thư viện, xung đột phiên bản hoặc cấu hình môi trường. Có những lúc phải tìm kiếm trên Google, tham khảo Stack Overflow, hỏi AI rồi thử từng phương án nhưng vẫn chưa giải quyết được vấn đề. Thậm chí, việc thử các lệnh không phù hợp còn có thể khiến môi trường lập trình đang hoạt động bình thường bị lỗi và phải tạo lại từ đầu.
+
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 Xác định đúng bottleneck thay vì mô tả toàn bộ quy trình như một vấn đề.
 Phân biệt baseline đã đo với target kỳ vọng.
 Viết metric có thể kiểm chứng được.
 Xác định boundary để tránh giao cho AI những quyền có thể gây rủi ro.
 Đảm bảo problem statement mô tả vấn đề của người dùng, không biến thành mô tả tính năng của sản phẩm.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 Kiểm chứng các giả định sớm hơn, đặc biệt là thời gian thực tế và tần suất xảy ra lỗi.
 Phỏng vấn nhiều đối tượng có trình độ và môi trường lập trình khác nhau.
 Yêu cầu nhóm làm rõ baseline trước khi đưa ra target.
 Phản biện mạnh hơn về việc AI có thực sự tạo ra giá trị vượt trội so với checklist, Rule hoặc công cụ quản lý dependency hiện có.
 Đặc biệt chú ý đến an toàn, quyền thực thi lệnh và cơ chế quay lại khi AI đề xuất sai.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
 Bài nhóm tôi tập trung vào vấn đề lập trình viên mất nhiều thời gian xử lý lỗi cài đặt thư viện và xung đột môi trường Python. Quy trình hiện tại gồm đọc log lỗi, kiểm tra môi trường, tìm kiếm nguyên nhân, lựa chọn phương án khắc phục, thử thực hiện và chạy lại để xác nhận kết quả. Bottleneck chính là bước thử phương án và kiểm tra lại, chiếm khoảng 30 phút trong tổng thời gian 61 phút của trường hợp khảo sát. Metric đặt ra là giảm tổng thời gian xử lý xuống không quá 40 phút/lỗi và giảm thời gian bottleneck xuống không quá 15 phút. Boundary là AI chỉ được phân tích log, kiểm tra thông tin môi trường và đề xuất phương án, không được tự ý thực thi lệnh hoặc thay đổi môi trường lập trình. Vì vậy, nhóm lựa chọn hướng kết hợp Rule và AI: Rule xử lý các trường hợp có quy tắc rõ ràng, AI hỗ trợ phân tích lỗi phức tạp và đề xuất cách khắc phục phù hợp. Lập trình viên vẫn là người kiểm tra, phê duyệt và quyết định thực hiện để đảm bảo an toàn cho môi trường dự án.
 
