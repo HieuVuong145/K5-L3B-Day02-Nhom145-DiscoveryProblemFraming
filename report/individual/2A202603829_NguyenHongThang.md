@@ -75,10 +75,9 @@ Hỏi con về tiến độ
 Kiểm tra bài làm và trạng thái nộp
        ↓
 Nhắc nhở và theo dõi
-```text
 
 Quy trình mong muốn
-```text
+
     LMS + Zalo + Email + Ảnh chụp
                  ↓
           AI thu thập dữ liệu
@@ -92,7 +91,7 @@ Quy trình mong muốn
       Theo dõi tiến độ + Deadline
                  ↓
        Nhắc nhở + Báo cáo hàng ngày
-```text
+
 
 ### Problem Card #2 - Tự động lập thông báo tiền điện, nước
 
