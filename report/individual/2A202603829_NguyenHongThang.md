@@ -90,7 +90,6 @@ Quy trình mong muốn
       Theo dõi tiến độ + Deadline
                  ↓
        Nhắc nhở + Báo cáo hàng ngày
-
 ```
 
 ### Problem Card #2 - Tự động lập thông báo tiền điện, nước
