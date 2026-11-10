@@ -140,15 +140,15 @@ Quy trình nháp hiện tại:
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
+| Pitch Problem Card |Đưa ra ba candidate: phân loại cảnh báo mạng, chuyển báo cáo thành slide, đối chiếu JD với kỹ năng. |Có ba mục đề xuất trong `group_report.md` phần 2.1 (candidate #1–#3), các vấn đề này được đưa vào bước hội tụ nhóm. |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: Với bài điều hướng khám bệnh, hỏi điểm khác biệt với hệ thống tra cứu và vai trò thật của AI. Với Homework Assistant, đặt câu hỏi về bài tập trong vở, kết nối Zalo/LMS/Google Classroom, API và quyền truy cập. |Làm rõ rủi ro thu thập dữ liệu từ nhiều nguồn và yêu cầu không bắt đầu bằng giải pháp AI. |
+| Nhận phản biện | Câu hỏi tôi nhận được: Candidate #1: Thắng hỏi về các giải pháp đã có; #2: Hiếu hỏi về điểm khác biệt so với công cụ AI hiện có; #3: Trường hỏi cách giúp ứng viên tìm đúng vị trí.| Tôi đã sửa gì:|
+| Gom cluster / cây OST |Trao đổi cách gom nhóm vấn đề theo pain (tổng hợp thông tin, đối chiếu/ra quyết định, theo dõi quy trình) và chỉnh cách diễn đạt opportunity thay vì solution. |Bản hội tụ có tại `group_report.md` phần 2.3 |
+| Chọn candidate problem |Đánh giá shortlist #9/#7/#12 theo 7 tiêu chí, rà soát độ tin cậy của số liệu và lý do chọn #9. |`group_report.md` mục 2.4. Điểm số mang tính đánh giá nhóm |
+| Kiểm chứng / research |Có đặt câu hỏi phản biện về khả năng thu thập dữ liệu từ các nguồn Zalo/LMS. | |
+| Quy trình nhóm |Sử dụng kết quả CP5 làm đầu vào để đánh giá các mức can thiệp tại mục 6, 7. | |
+| Problem Statement |Phát triển Problem Statement v1 |`group_report.md` mục 7, target vẫn là giả thuyết/pilot, không phải kết quả thực nghiệm. |
+| Mức can thiệp AI |Phân tích ma trận độ mơ hồ × độ phức tạp, so sánh No AI/Rule/Workflow/Agent, xây dựng AI Canvas và đánh giá hướng augment với Human-in-the-Loop. |Đề xuất Workflow có AI hỗ trợ chẩn đoán và lập trình viên kiểm soát lệnh |
 | Quyết định | | |
 
 ---
@@ -157,12 +157,11 @@ Quy trình nháp hiện tại:
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan |Gợi ý thêm vấn đề và chuẩn hóa Job Story. |Gọi ý và hoàn thiện tốt |Gợi ý chung chung, không cụ thể thực tế |Giữ những khó khăn đã gặp |
+| CP2 Problem Card |PHản biện bottelneck, baseline, phương án không dùng AI |Đánh giá đúng số liệu ước lượng khác với số liệu đo |Dễ đưa target khi chưa đủ baseline tin cậy |Gọi lại đúng số liệu ước lượng, bổ sung phương án Rule/Workflow và cách đo |
+| CP3 Hội tụ nhóm |Rà soát và đánh giá kết quả |Đánh giá và đưa ra thêm các tiêu chí đánh giá khác quan hơn | |Áp dụng thêm các tiêu chí đánh giá nhóm thấy hợp lý |
+| CP5 Quy trình |Đọc tài liệu và đánh giá CP5 |Giúp hiểu thời điểm AI có thể can thiệp và quy trình người dùng | |Chỉ dùng để tham chiếu cho phần sau, không phụ trách |
+| CP6 Mức can thiệp / quyết định |Nhờ AI giải thích và trình bày ma trận mơ hồ x phức tạp, so sánh các mức can thiệp |Hộ trợ lập luận cho Workflow có AI, với HITL |Ma trận còn thiếu và khó hiểu ban đầu |Chuyển thành bảng Markdown 2x2, giữ quyền phê duyệt, thực thi ở lập trình viên và không mặc định AI tốt hơn rule |
 
 ---
 
@@ -171,18 +170,25 @@ Quy trình nháp hiện tại:
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Có những bài toán đã có các giải pháp hiện tại, cần đánh giá và đề xuất kỹ lưỡng trước khi đi sâu vào, xem có ích gì không, có ưu điểm gì không.
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+AI Homework Assitant rất hữu ích nhưng có rất nhiều vấn đề khi đi vào hiểu thêm như bài tập loại bài vở kiểm tra kiểu gì, các ứng dụng, nền tảng có chức năng gọi API không, khả năng thực tế đến đâu, cách AI xử lý các loại đầu vào khác nhau... Cảm thấy khó, chưa xử lý.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Có. Với việc hỗ trợ các nhân viên giám sát mạng với các alert lặp lại, các hệ thống hiện đại ngày nay đa phần đều sở hữu, từ các rules, offense, đến cả các chức năng AI tích hợp
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+Không, bởi đa phần đều là các vấn đề khá quen thuộc 
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Chưa thực sự làm và có các số liệu thực tế, khá khó để đánh giá đúng
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Nếu làm lại, tôi sẽ muốn đề xuất vấn đề ưu tiên của cá nhân mình khác đi, vì tôi lúc đó cũng biết có khá nhiều hướng giải pháp cho giám sát mạng, tuy nhiên điều đó đến từ trải nghiệm cá nhân từ lúc mới tiếp xúc các hệ thống giám sát mạng nên tôi ưu tiên.
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+Đề xuất các problem thực tế mà mọi người gặp phải, gây ra các vấn đề mất thời gian, lặp đi lặp lại, ... Sau đó làm rõ các problem đó với trường thông tin đánh giá ban đầu như actor, bottlenecks,... Sau đó thống kê, gom nhóm các problem tương tự, thực hiện chấm điểm các candidate trên các tiêu chí khác nhau, chọn ra problem. Sau đó đánh giá, vạch ra ranh giới cho AI, kiểm chứng các mức độ can thiệp AI, đánh giá khách quan problem ưu tiên dùng gì. Cuối cùng đưa ra quyết định.
 
 ---
 
