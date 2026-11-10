@@ -13,7 +13,7 @@
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
 | 1 | Vương Toàn Minh Hiếu | 2A202603853 | Research/Kiểm chứng | HieuVuong145 |
-| 2 |Nguyễn Hồng Thắng |2A202603829 |Hội tụ nhóm/ Kiểm chứng |thangdktd |
+| 2 |Nguyễn Hồng Thắng |2A202603829 |Hội tụ nhóm |thangdktd |
 | 3 |Nguyễn Văn Hùng |2A202603816 |Problem Statement v1 |nguyenhung1901 |
 | 4 |Nguyễn Đình Trường |2A202603837 |Quy trình trước sau, Problem statement v0 |ngdinhtruong28 |
 
@@ -26,7 +26,7 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 | Checkpoint | Người chính | Người hỗ trợ | Sản phẩm |
 |---|---|---|---|
 | CP3 — Hội tụ nhóm |Thắng |Hùng | Cluster, cây OST, bảng chấm điểm |
-| CP4 — Kiểm chứng | Hiếu |Thắng | Assumption map, snapshot hoặc survey |
+| CP4 — Kiểm chứng | Hiếu | | Assumption map, snapshot hoặc survey |
 | CP4 — Research | Hiếu | | Bảng research có link |
 | CP5 — Quy trình trước/sau |Trường | | Quy trình + bảng before/after |
 | CP5 — Problem Statement v0 |Trường | | Problem Statement v0 |
