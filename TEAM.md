@@ -13,7 +13,7 @@
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
 | 1 | Vương Toàn Minh Hiếu | 2A202603853 | Research/Kiểm chứng | HieuVuong145 |
-| 2 | | | | |
+| 2 |Nguyễn Hồng Thắng |2A202603829 |Hội tụ nhóm/ Kiểm chứng |thangdktd |
 | 3 | | | | |
 | 4 |Nguyễn Đình Trường |2A202603837 |Quy trình trước sau, Problem statement v0 |ngdinhtruong28 |
 
@@ -25,8 +25,8 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 | Checkpoint | Người chính | Người hỗ trợ | Sản phẩm |
 |---|---|---|---|
-| CP3 — Hội tụ nhóm | | | Cluster, cây OST, bảng chấm điểm |
-| CP4 — Kiểm chứng | Hiếu | | Assumption map, snapshot hoặc survey |
+| CP3 — Hội tụ nhóm |Thắng | | Cluster, cây OST, bảng chấm điểm |
+| CP4 — Kiểm chứng | Hiếu |Thắng | Assumption map, snapshot hoặc survey |
 | CP4 — Research | Hiếu | | Bảng research có link |
 | CP5 — Quy trình trước/sau |Trường | | Quy trình + bảng before/after |
 | CP5 — Problem Statement v0 |Trường | | Problem Statement v0 |
@@ -55,23 +55,26 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 - Cách lựa chọn các giả định và kiểm thử phù hợp và cần thiết cho bài toán, vấn đề đang được đặt ra. Từ đó nghiên cứu và lựa chọn cái giải pháp đề xuất (có thể có sẵn) hợp lý trong bối cảnh vấn đề.
 
-### 2. HoVaTen-MSSV
+### 2. Nguyễn Hồng Thắng - 2A202603829
 
 **Phần việc phụ trách:**
 
--
+- brainstorm các Candidate problem, hội tụ nhóm và chấm điểm các candidate.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
-
+- Đề xuất và phân tích 3 Candidate Problem xuất phát từ trải nghiệm thực tế: AI Homework Assistant, tự động lập thông báo tiền điện/nước và quản lý yêu cầu sửa chữa của khách thuê.
+- Tổng hợp, Phân tích, phản biện các candidate. Hội tụ nhóm và chấm điểm camdidate.
+  
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+- group_report.md – Mục 2.1: Pitch, 3 Candidate Problem do Nguyễn Hồng Thắng đề xuất và các câu hỏi phản biện.
+- group_report.md – Mục 2.2–2.4: Cluster, Opportunity Solution Tree và bảng chấm điểm shortlist.
 
 **Điều mình học được từ phần nhóm:**
 
--
+- Tôi học được cách chuyển từ một ý tưởng ứng dụng AI sang xác định một vấn đề thực tế cần giải quyết, có Actor, quy trình, Bottleneck và bằng chứng cụ thể.
+- Bài học quan trọng nhất là phải xác định đúng Problem trước khi lựa chọn Solution, đồng thời luôn đặt ra giới hạn can thiệp của AI và duy trì quyền kiểm soát của con người.
 
 ### 3. HoVaTen-MSSV
 
