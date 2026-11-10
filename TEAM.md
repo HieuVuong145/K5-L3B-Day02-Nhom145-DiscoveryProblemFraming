@@ -15,7 +15,7 @@
 | 1 | Vương Toàn Minh Hiếu | 2A202603853 | Research/Kiểm chứng | HieuVuong145 |
 | 2 | | | | |
 | 3 | | | | |
-| 4 | | | | |
+| 4 |Nguyễn Đình Trường |2A202603837 |Quy trình trước sau, Problem statement v0 |ngdinhtruong28 |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
@@ -91,20 +91,20 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 -
 
-### 4. HoVaTen-MSSV
+### 4. NguyenDinhTruong-2A202603837
 
 **Phần việc phụ trách:**
 
--
+- Đóp gọp brainstomr các candidate problem, tìm hiều và xây dựng quy trình 
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
+- Xây dựng được quy trình trước và sau khi cải tiến và đánh giá các problem statement trước khi cải tiến
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+- Phần 4(CP5) và phần 5 (CP5)
 
 **Điều mình học được từ phần nhóm:**
 
--
+- Cách xây dựng được 1 quy trình hoàn thiện của việc xác định bài toán có AI, hiểu được cách đánh giá giữa có và không AI trong bối cảnh nhất định từ đó đưa ra quyết định.
