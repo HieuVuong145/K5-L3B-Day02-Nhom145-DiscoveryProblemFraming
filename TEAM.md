@@ -14,7 +14,7 @@
 |---:|---|---|---|---|
 | 1 | Vương Toàn Minh Hiếu | 2A202603853 | Research/Kiểm chứng | HieuVuong145 |
 | 2 |Nguyễn Hồng Thắng |2A202603829 |Hội tụ nhóm/ Kiểm chứng |thangdktd |
-| 3 | | | | |
+| 3 |Nguyễn Văn Hùng |2A202603816 |Problem Statement v1 |nguyenhung1901 |
 | 4 |Nguyễn Đình Trường |2A202603837 |Quy trình trước sau, Problem statement v0 |ngdinhtruong28 |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
@@ -25,12 +25,12 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 | Checkpoint | Người chính | Người hỗ trợ | Sản phẩm |
 |---|---|---|---|
-| CP3 — Hội tụ nhóm |Thắng | | Cluster, cây OST, bảng chấm điểm |
+| CP3 — Hội tụ nhóm |Thắng |Hùng | Cluster, cây OST, bảng chấm điểm |
 | CP4 — Kiểm chứng | Hiếu |Thắng | Assumption map, snapshot hoặc survey |
 | CP4 — Research | Hiếu | | Bảng research có link |
 | CP5 — Quy trình trước/sau |Trường | | Quy trình + bảng before/after |
 | CP5 — Problem Statement v0 |Trường | | Problem Statement v0 |
-| CP6 — Mức can thiệp + Problem Statement v1 | | | Ma trận, AI Canvas, eval, Problem Statement v1 |
+| CP6 — Mức can thiệp + Problem Statement v1 |Hùng | | Ma trận, AI Canvas, eval, Problem Statement v1 |
 | CP6 — Quyết định | Hiếu | | 4 rủi ro + Go/Not Yet/No-Go |
 
 ## Cá nhân
@@ -76,23 +76,27 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - Tôi học được cách chuyển từ một ý tưởng ứng dụng AI sang xác định một vấn đề thực tế cần giải quyết, có Actor, quy trình, Bottleneck và bằng chứng cụ thể.
 - Bài học quan trọng nhất là phải xác định đúng Problem trước khi lựa chọn Solution, đồng thời luôn đặt ra giới hạn can thiệp của AI và duy trì quyền kiểm soát của con người.
 
-### 3. HoVaTen-MSSV
+### 3. NguyenVanHung-2A202603816
 
 **Phần việc phụ trách:**
 
--
+- Góp phần xây dựng Opportunity Solution Tree, chấm điểm shortlist, phân tích mức can thiệp ai và problem statement v1
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
-
+- Đề xuất cây OST với một outcome chung và ba nhánh opportunity
+- Thảo luận và đánh giá shortlist
+- Phân tích lựa chọn workflow kết hợp AI hỗ trợ chẩn đoán
+- Xây dựng đề xuất Problem statement v1
+  
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+-`report/team/group_report.md`, Mục 2.3, 2.4, 6 và 7
 
 **Điều mình học được từ phần nhóm:**
 
--
+- Cần viết opportunity theo nhu cầu thật của người dùng, không lấy tên giải pháp làm vấn đề, phải phân biệt outcome chung và tính năng sản phẩm.
+- Mức can thiệp AI không được quyết định chỉ từ độ phức tạp, cần so sánh phương án đơn giản hơn, xác định boundary, metric và cách con người xác nhận kết quả.
 
 ### 4. NguyenDinhTruong-2A202603837
 
