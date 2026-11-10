@@ -188,6 +188,7 @@ Chưa thực sự làm và có các số liệu thực tế, khá khó để đ�
 Nếu làm lại, tôi sẽ muốn đề xuất vấn đề ưu tiên của cá nhân mình khác đi, vì tôi lúc đó cũng biết có khá nhiều hướng giải pháp cho giám sát mạng, tuy nhiên điều đó đến từ trải nghiệm cá nhân từ lúc mới tiếp xúc các hệ thống giám sát mạng nên tôi ưu tiên.
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
 Đề xuất các problem thực tế mà mọi người gặp phải, gây ra các vấn đề mất thời gian, lặp đi lặp lại, ... Sau đó làm rõ các problem đó với trường thông tin đánh giá ban đầu như actor, bottlenecks,... Sau đó thống kê, gom nhóm các problem tương tự, thực hiện chấm điểm các candidate trên các tiêu chí khác nhau, chọn ra problem. Sau đó đánh giá, vạch ra ranh giới cho AI, kiểm chứng các mức độ can thiệp AI, đánh giá khách quan problem ưu tiên dùng gì. Cuối cùng đưa ra quyết định.
 
 ---
