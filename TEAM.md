@@ -95,7 +95,7 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:**
 
-- Đóp gọp brainstomr các candidate problem, tìm hiều và xây dựng quy trình 
+- Đóng góp các ý tưởng và cùng brainstorm các candidate problem, tìm hiều và xây dựng quy trình 
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
