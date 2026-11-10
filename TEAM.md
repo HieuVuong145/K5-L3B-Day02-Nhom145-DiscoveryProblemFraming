@@ -59,12 +59,12 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:**
 
-- brainstorm các Candidate problem, nghiên cứu và kiểm thử, đưa ra quyết định.
+- brainstorm các Candidate problem, hội tụ nhóm và chấm điểm các candidate.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
 - Đề xuất và phân tích 3 Candidate Problem xuất phát từ trải nghiệm thực tế: AI Homework Assistant, tự động lập thông báo tiền điện/nước và quản lý yêu cầu sửa chữa của khách thuê.
-- Suy nghĩ, brainstorm và đưa ra các loại giả định kèm theo testcase kiểm thử vấn đề.
+- Tổng hợp, Phân tích, phản biện các candidate. Hội tụ nhóm và chấm điểm camdidate.
   
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
